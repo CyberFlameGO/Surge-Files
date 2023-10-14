@@ -1,0 +1,7 @@
+name: Samurai
+version: '${project.version}'
+main: dev.aurapvp.samurai.Samurai
+authors: [ LBuddyBoy ]
+api-version: 1.19
+softdepend:
+  - Vault

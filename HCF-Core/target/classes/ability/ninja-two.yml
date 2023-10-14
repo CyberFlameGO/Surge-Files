@@ -1,0 +1,9 @@
+display-name: "&6&lNinjaStar 2.0"
+lore:
+  - "&7Eat this fruit to be teleported to the last"
+  - "&7person that hit you!"
+material: "CHORUS_FRUIT"
+default-amount: 3
+cooldown-seconds: 90
+exclusive: true
+consumable: false

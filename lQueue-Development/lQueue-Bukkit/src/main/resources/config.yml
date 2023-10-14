@@ -1,0 +1,17 @@
+channel-name: "lQueue|Global" # make sure this matches up with the lQueue Distributed.
+
+server-name: "Hub-1"
+hub: true
+
+messages:
+  queue-reminder:
+    action-bar: true
+    message-delay: 0.5 # seconds
+    message: "&aYou are currently #%pos% out of %queue-size% in the %queue-name% queue."
+
+offline-queue: # if the player has the rank.<rank> permission they will receive that amount of seconds in the offline queue
+  default: 60 # seconds
+
+priorities: # if the player has the rank.<rank> permission they will receive that priority in the queue
+  default: 1
+  owner: 100

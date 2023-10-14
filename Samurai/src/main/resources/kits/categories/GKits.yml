@@ -1,0 +1,28 @@
+name: "GKits"
+display-name: "&6God Kits"
+display-item:
+  material: "REDSTONE"
+  name: "&6God Kits &7(Click)"
+  lore: {}
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+  slot: 7
+menu-settings:
+  size: 27
+  title: "God Kits"
+  auto-fill:
+    enabled: true
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore: {}
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        - 'DURABILITY:10'
+      data: 7
+      amount: 1

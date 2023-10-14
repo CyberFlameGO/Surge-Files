@@ -1,0 +1,60 @@
+default:
+  title: "&d&lAuraPvP &7| &eHCF"
+  lines:
+    - '&f  %date%'
+    - '&r'
+    - '&8┌─ &d&l%player%'
+    - '&8│ &fBalance: &7$%balance%'
+    - '&8│ &fCoins: &7⛁%coins%'
+    - '&8│ &fOnline: &7%online%'
+    - '&8┌─ &d&lFaction'
+    - '&8│ &fCreate a faction'
+    - '&8│ &fusing: &a/f create'
+    - '&8└─ &dplay.aurapvp.com'
+
+faction:
+  lines:
+    - '&f  %date%'
+    - '&r'
+    - '&8┌─ &d&l%player%'
+    - '&8│ &fBalance: &7$%balance%'
+    - '&8│ &fCoins: &7⛁%coins%'
+    - '&8│ &fOnline: &7%online%'
+    - '&8├─ &d&lFaction'
+    - '&8│ &fPlace: &7#%faction-place%'
+    - '&8│ &fPoints: &7%faction-points%'
+    - '&8│ &fOnline: &7%faction-online%/%faction-members%'
+    - '&8└─ &dplay.aurapvp.com'
+
+koth-default:
+  lines:
+    - '&f  %date%'
+    - '&r'
+    - '&8┌─ &d&l%player%'
+    - '&8│ &fBalance: &7$%balance%'
+    - '&8│ &fCoins: &7⛁%coins%'
+    - '&8│ &fOnline: &7%online%'
+    - '&8├─ &d&lKoTH &7(%koth%)'
+    - '&8│ &fTime Left: &7%time-left%'
+    - '&8│ &fCapturing: &7%capturing%'
+    - '&8┌─ &d&lFaction'
+    - '&8│ &fCreate a faction'
+    - '&8│ &fusing: &a/f create'
+    - '&8└─ &dplay.aurapvp.com'
+
+koth-faction:
+  lines:
+    - '&f  %date%'
+    - '&r'
+    - '&8┌─ &d&l%player%'
+    - '&8│ &fBalance: &7$%balance%'
+    - '&8│ &fCoins: &7⛁%coins%'
+    - '&8│ &fOnline: &7%online%'
+    - '&8├─ &d&lKoTH &7(%koth%)'
+    - '&8│ &fTime Left: &7%time-left%'
+    - '&8│ &fCapturing: &7%capturing%'
+    - '&8├─ &d&lFaction'
+    - '&8│ &fPlace: &7#%faction-place%'
+    - '&8│ &fPoints: &7%faction-points%'
+    - '&8│ &fOnline: &7%faction-online%/%faction-members%'
+    - '&8└─ &dplay.aurapvp.com'

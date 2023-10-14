@@ -1,0 +1,33 @@
+number: 1
+xp-needed: 100
+description:
+- '&eXP Needed&7: &f%xp%'
+- ''
+- '&7Right Click to view this tier''s rewards.'
+- '&7Left Click to claim this tier''s rewards.'
+free-rewards:
+  32x-Diamonds:
+    display-item:
+      material: DIAMOND
+      name: ''
+      lore:
+      - ''
+      item-flags:
+      - HIDE_ENCHANTS
+      data: 0
+      amount: 32
+    commands:
+    - give %player% diamond 32
+bought-rewards:
+  64x-Diamonds:
+    display-item:
+      material: DIAMOND
+      name: ''
+      lore:
+      - ''
+      item-flags:
+      - HIDE_ENCHANTS
+      data: 0
+      amount: 64
+    commands:
+    - give %player% diamond 64

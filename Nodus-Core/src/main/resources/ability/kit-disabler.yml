@@ -1,0 +1,9 @@
+display-name: "&6&lKit Disabler"
+lore:
+  - "&7Right click to give any class in a 15 block"
+  - "&7radius 20 seconds of a disabled class."
+  - " "
+  - "&a&lCOOLDOWN&7: &f90 Seconds"
+material: "POPPED_CHORUS_FRUIT"
+default-amount: 1
+cooldown-seconds: 90

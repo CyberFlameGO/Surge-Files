@@ -1,0 +1,48 @@
+display-name: '&e&lBlock Shop'
+menu-settings:
+  title: Block Shop
+  size: 45
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore:
+      - ''
+      item-flags:
+      - HIDE_ENCHANTS
+      data: 3
+      amount: 1
+  page:
+    previous-slot: 20
+    next-slot: 26
+    button-slots: 12,13,14,15,16,21,22,23,24,25,30,31,32,33,34
+display-item:
+  slot: 15
+  material: GRASS
+  name: §e§lBlock Shop
+  lore:
+  - §7§m-----------------------
+  - §7This shop contains all necessary
+  - §7building blocks!
+  - ' '
+  - §7Click to view contents.
+  - §7§m-----------------------
+  item-flags:
+  - HIDE_ENCHANTS
+  data: 0
+  amount: 1
+items:
+  Grass:
+    display-name: '&eGrass Block'
+    description:
+    - '&6Buy Price &7(Left Click)'
+    - '&a$%buy-price% &7per block'
+    - ' '
+    - '&6Sell Price &7(Right Click)'
+    - '&cNot Sellable'
+    - ''
+    material: GRASS
+    data: 0
+    buy-price: 1.0
+    sell-price: -1.0

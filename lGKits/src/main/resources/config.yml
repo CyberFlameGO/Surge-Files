@@ -1,0 +1,49 @@
+MONGO:
+  USE: false
+  HOST: 127.0.0.1
+  PORT: 27017
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ''
+    PASSWORD: ''
+
+rarities:
+  common:
+    name: "Common"
+    color: "GREEN"
+    display-name: "&a&lCOMMON"
+  rare:
+    name: "Rare"
+    color: "BLUE"
+    display-name: "&9&lRARE"
+  legendary:
+    name: "Legendary"
+    color: "GOLD"
+    display-name: "&6&lLEGENDARY"
+
+inventory:
+  title: All Kits
+  size: 27
+  auto-fill: true
+
+lore-formats:
+  normal:
+    - ''
+    - '&f%description%'
+    - ''
+    - '&fPurchase At: &6store.lbuddyboy.me'
+    - '&fCooldown: &6%cooldown%'
+  noperm:
+    - ''
+    - '&f%description%'
+    - ''
+    - '&fPurchase At: &6store.lbuddyboy.me'
+    - '&fCooldown: &6%cooldown%'
+    - ''
+    - '&cYou currently do not have access to this kit.'
+  oncooldown:
+    - ''
+    - '&f%description%'
+    - ''
+    - '&fPurchase At: &6store.lbuddyboy.me'
+    - '&fCooldown: &6%time-left%'

@@ -1,0 +1,20 @@
+menu-settings:
+  title: Warps
+  size: 18
+  auto-fill:
+    enabled: false
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - HIDE_ENCHANTS
+      data: 3
+      amount: 1
+  page:
+    previous-slot: 1
+    next-slot: 9
+    button-slots: 10,11,12,13,14,15,16,17,18
+
+warping: "&aYou will be warped to the %warp% warp in %warmup% seconds!"

@@ -1,0 +1,43 @@
+game-settings:
+  minimum-start-players: 4
+  minimum-players: 16
+  max-players: 64
+  disabled: false
+host-item:
+  material: "SLIME_BALL"
+  description: "Try and knock your opponent in to the water over the edge."
+
+scoreboard-lines:
+  waiting:
+    global:
+      - '&gPlayers&f: %players%/%max-players%'
+    voting:
+      - '&gMap Vote'
+      - '&7» %map-1%: %map-1-votes%'
+      - '&7» %map-2%: %map-2-votes%'
+      - '&7» %map-3%: %map-3-votes%'
+    voted:
+      - '&gMap&f: %voted-map%'
+    starting-waiting:
+      - ''
+      - '&a&oWaiting for %players-needed%'
+    starting-players-met:
+      - ''
+      - '&a&oStarting in %starting-in%s'
+  running:
+    global:
+      - '&gRemaining&f: %players%/%started-with%'
+      - '&gRound&f: %current-round%'
+    selecting:
+      - '&a&oSelecting new players...'
+    normal:
+      - ''
+      - '&g%playerA% &7vs. &g%playerB%'
+    name-too-long:
+      - ''
+      - '&g%playerA%'
+      - '&7vs.'
+      - '&g%playerB%'
+  finished:
+    - '&gWinner&f: %winner%'
+    - '&gRounds&f: %current-round%'

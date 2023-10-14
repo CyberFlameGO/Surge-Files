@@ -1,0 +1,80 @@
+display-name: "&6&lPortable Bard"
+lore:
+  - "&7Click to receive a portable bard effect"
+material: "ORANGE_DYE"
+default-amount: 1
+cooldown-seconds: 90
+exclusive: false
+consumable: true
+
+portable-bards:
+  strength:
+    display-name: "&6&lStrength II"
+    lore:
+      - "&7Click to receive Strength 2"
+    material: "BLAZE_POWDER"
+    effect: "strength"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 2
+  resistance:
+    display-name: "&6&lResistance III"
+    lore:
+      - "&7Click to receive Resistance III"
+    material: "IRON_INGOT"
+    effect: "resistance"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 3
+  speed:
+    display-name: "&6&lSpeed III"
+    lore:
+      - "&7Click to receive Speed III"
+    material: "SUGAR"
+    effect: "speed"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 3
+  jump:
+    display-name: "&6&lJump Boost VII"
+    lore:
+      - "&7Click to receive Jump Boost VII"
+    material: "FEATHER"
+    effect: "jump"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 7
+  invis:
+    display-name: "&6&lInvisibility"
+    lore:
+      - "&7Click to receive Invisibility"
+    material: "INK_SACK"
+    effect: "invisibility"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 1
+  wither:
+    display-name: "&6&lWither"
+    lore:
+      - "&7Click to give enemies wither"
+    material: "SPIDER_EYE"
+    effect: "wither"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 1
+  regen:
+    display-name: "&6&lRegeneration"
+    lore:
+      - "&7Click to give you and your team regeneration"
+    material: "GHAST_TEAR"
+    effect: "regeneration"
+    custom-model-data: 0
+    default-amount: 3
+    effect-time: 8
+    amplifier: 3

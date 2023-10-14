@@ -1,0 +1,28 @@
+fake-counts: false
+default:
+  title: "&6&llHub &7┃ &fHub"
+  lines:
+    - '&7&m-------------'
+    - '&6&lONLINE'
+    - '&7%bungee_total%'
+    - ''
+    - '&6&lRANK'
+    - '&r%rank_color%%rank_display%'
+    - ''
+    - '&6lbuddyboy.me'
+    - '&7&m-------------'
+queue:
+  title: "&6&llHub &7┃ &fHub"
+  lines:
+    - '&7&m-------------'
+    - '&6&lONLINE'
+    - '&7%bungee_total%'
+    - ''
+    - '&6&lRANK'
+    - '&r%rank_color%%rank_display%'
+    - ''
+    - '&6&lQUEUE &7(%queue%)'
+    - '&f#%pos%/%size%'
+    - ''
+    - '&6lbuddyboy.me'
+    - '&7&m-------------'

@@ -1,0 +1,22 @@
+display-name: '&4&lFlame Pet'
+rarity: rare
+lore:
+- ' '
+- '&a&lHAVE IN INVENTORY'
+- '&7Receive fire resistance!'
+- ' '
+- '&e&lLevel: &7%level%'
+- '&e&lXP: &7%experience%/%needed-experience%'
+- ' '
+menu-lore:
+- ' '
+- '&a&lHAVE IN INVENTORY'
+- '&7Receive fire resistance!'
+- ' '
+- '&a&lLEVEL VARIATIONS'
+- '&71-100 (Fire Resistance 1)'
+- ' '
+texture: 8e45c65adfb7966b29f11247dac3c6e0ddbea3da0e0c4cb2b6df15d63fb2ac
+max-level: 100
+level-variations:
+- 1-100;1

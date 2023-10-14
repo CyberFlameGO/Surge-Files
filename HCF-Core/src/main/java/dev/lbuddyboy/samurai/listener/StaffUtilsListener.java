@@ -1,0 +1,42 @@
+package dev.lbuddyboy.samurai.listener;
+
+import dev.lbuddyboy.samurai.util.modsuite.ModUtils;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
+
+public class StaffUtilsListener implements Listener {
+
+    private Location lastDamageLocation;
+
+    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    public void onEntityDamageByEntity(EntityDamageByEntityEvent event) {
+        if (event.getEntity() instanceof Player && event.getDamager() instanceof Player) {
+            lastDamageLocation = event.getEntity().getLocation();
+        }
+    }
+
+    @EventHandler(priority = EventPriority.MONITOR)
+    public void onPlayerInteract(PlayerInteractEvent event) {
+        if (lastDamageLocation != null
+                && event.getItem() != null
+                && event.getItem().getType() == Material.DIAMOND
+                && event.getPlayer().hasMetadata("modmode")) {
+            event.getPlayer().teleport(lastDamageLocation);
+        }
+    }
+
+    @EventHandler
+    public void onPlayerInteract2(PlayerInteractEvent event) {
+        if (event.getAction() == Action.PHYSICAL && ModUtils.isInvisible(event.getPlayer()) && (event.getClickedBlock().getType() == Material.LEGACY_CROPS || event.getClickedBlock().getType() == Material.LEGACY_SOIL)) {
+            event.setCancelled(true);
+        }
+    }
+
+}

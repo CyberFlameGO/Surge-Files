@@ -1,0 +1,15 @@
+menu-settings:
+  size: 27
+  title: "Kit Menu"
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore: []
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        - 'DURABILITY:10'
+      data: 0
+      amount: 1

@@ -1,0 +1,6 @@
+name: lQueue
+version: '${project.version}'
+main: dev.lbuddyboy.lqueue.lQueue
+authors: [ LBuddyBoy ]
+depend:
+  - lLibs

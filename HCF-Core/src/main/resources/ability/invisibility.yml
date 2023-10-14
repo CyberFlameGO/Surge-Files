@@ -1,0 +1,8 @@
+display-name: "&6&lInvisiblity"
+lore:
+  - "&7Right lcick to go invis."
+material: "INK_SACK"
+default-amount: 2
+cooldown-seconds: 90
+exclusive: false
+consumable: true

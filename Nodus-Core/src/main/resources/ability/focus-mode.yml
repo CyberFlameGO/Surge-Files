@@ -1,0 +1,6 @@
+display-name: "&6&lFocus Mode"
+lore:
+  - "&7Hit a player 3 times to receive a 20% damage buff on them!"
+material: "MAGMA_CREAM"
+default-amount: 2
+cooldown-seconds: 90

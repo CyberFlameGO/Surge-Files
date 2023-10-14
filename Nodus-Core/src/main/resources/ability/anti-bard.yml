@@ -1,0 +1,10 @@
+display-name: "&6&lAnti Bard"
+lore:
+  - "&7Hit an opponent with this item and"
+  - "&7you'll prevent them from receiving"
+  - "&7any type of bard effect for 1 minute."
+material: "GOLD_INGOT"
+default-amount: 3
+cooldown-seconds: 80
+exclusive: false
+consumable: true

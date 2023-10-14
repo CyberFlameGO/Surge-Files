@@ -1,0 +1,5 @@
+name: BunkersCommunicator
+main: dev.lbuddyboy.communicate.BunkersCom
+version: 0.1
+author: LBuddyBoy
+api-version: 1.19

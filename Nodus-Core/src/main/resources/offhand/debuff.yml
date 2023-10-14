@@ -1,0 +1,11 @@
+display-name: "&5&lDebuff Item &7(Off Hand)"
+lore:
+  - "&7Hold this in your off hand to have a 10% chance"
+  - "&7to poison & slowness the person attacking you for 10 seconds."
+material: "SWEET_BERRIES"
+default-amount: 1
+cooldown-seconds: 45
+exclusive: false
+consumable: false
+slowness-seconds: 10
+poison-seconds: 10

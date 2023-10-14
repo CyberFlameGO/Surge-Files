@@ -1,0 +1,115 @@
+MONGO:
+  USE: true
+  HOST: localhost
+  PORT: 27017
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ''
+    PASSWORD: ''
+
+spring: false
+serverName: SteelPvP
+
+glowstoneMountain: false
+cavern: false
+startingTimer: false
+forceInvites: true
+nodus: false
+idleCheck: true
+uhcHealing: false
+passiveTag: true
+allowBoosting: false
+waterPlacementInClaims: false
+eventWebhook: "https://discord.com/api/webhooks/935353054339944509/v_1xudEO0E8DHloZ8ZFqLv2ErbwH-JjsWhfkFHXErQnBAsFLQYMvgUsvYCWL6gN7YCOu"
+blockRemoval: false
+rodPrevention: false
+skybridgePrevention: false
+reduceArmorDamage: true
+blockEntitiesThroughPortals: true
+archerTagColor: YELLOW
+defaultRelationColor: RED
+ENCHANTMENT_LIMIT:
+  DAMAGE_ALL: 1
+  PROTECTION_ENVIRONMENTAL: 1
+  ARROW_KNOCKBACK: 1
+  KNOCKBACK: 0
+  FIRE_ASPECT: 0
+  THORNS: 0
+  SILK_TOUCH: 1
+  PROTECTION_FIRE: 3
+  LURE: 3
+  LUCK: 3
+  LOOT_BONUS_MOBS: 3
+  OXYGEN: 3
+  WATER_WORKER: 1
+  LOOT_BONUS_BLOCKS: 3
+  PROTECTION_PROJECTILE: 3
+  PROTECTION_EXPLOSIONS: 3
+  ARROW_FIRE: 0
+  DURABILITY: 3
+  ARROW_DAMAGE: 4
+pvpClasses:
+  archer: true
+  bard: true
+  rogue: true
+  ranger: false
+
+potions:
+  REGEN:
+    splash: false
+    drinkables: false
+  SPEED:
+    splash: true
+    drinkables: true
+  FIRE_RESISTANCE:
+    splash: true
+    drinkables: true
+  POISON:
+    splash: true
+    drinkables: false
+  INSTANT_HEAL:
+    splash: true
+    drinkables: true
+  NIGHT_VISION:
+    splash: true
+    drinkables: true
+  WEAKNESS:
+    splash: false
+    drinkables: false
+  STRENGTH:
+    splash: false
+    drinkables: false
+  SLOWNESS:
+    splash: true
+    drinkables: false
+  INSTANT_DAMAGE:
+    splash: false
+    drinkables: false
+  WATER_BREATHING:
+    splash: true
+    drinkables: true
+  INVISIBILITY:
+    splash: false
+    drinkables: false
+shards:
+  STONE: 0.1
+  COAL_ORE: 0.5
+  IRON_ORE: 1.0
+  GOLD_ORE: 2.0
+  REDSTONE_ORE: 0.5
+  LAPIS_ORE: 5.0
+  DIAMOND_ORE: 5.0
+  EMERALD_ORE: 15.0
+reclaims:
+  Test:
+    priority: 1
+    permission: 'reclaim.test'
+    commands:
+      - crate give to %player% Gay 16
+      - pouch give %player% CRATEToken3 3
+      - pouch give %player% CRATEMoney3 2
+  Test2:
+    priority: 1
+    permission: 'reclaim.test2'
+    commands:
+      - crate give to %player% GAY 10

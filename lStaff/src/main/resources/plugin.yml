@@ -1,0 +1,26 @@
+name: lStaff
+version: ${project.version}
+main: me.lbuddyboy.staff.lStaff
+prefix: [lStaff]
+api-version: 1.13
+authors: [LBuddyB0y]
+softdepend:
+  - Samurai
+description: Essential Staff Plugin
+website: lbuddyboy.me
+
+commands:
+  editstaff:
+  togglestaff:
+    aliases:
+      - hidestaff
+      - showstaff
+  vanish:
+    aliases:
+      - v
+  staffmode:
+    aliases:
+      - mod
+      - modmode
+      - staff
+      - h

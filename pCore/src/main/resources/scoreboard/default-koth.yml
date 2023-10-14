@@ -1,0 +1,80 @@
+title:
+  frames:
+  - '&5&lTRIBES'
+  - '&5&lTRIBES'
+  - '&d&lT&5&lRIBES'
+  - '&d&lTR&5&lIBES'
+  - '&d&lTRI&5&lBES'
+  - '&d&lTRIB&5&lES'
+  - '&d&lTRIB&5&lES'
+  - '&d&lTRIBE&5&lS'
+  - '&d&lTRIBES'
+  - '&d&lTRIBES'
+  - '&5&lTRIBES'
+  - '&5&lTRIBES'
+  - '&d&lTRIBES'
+  - '&d&lTRIBES'
+  delay: 5
+lines:
+  '10':
+    frames:
+    - '&f     %date%'
+    delay: -1
+  '20':
+    frames:
+    - '&7&m--------------------'
+    delay: -1
+  '30':
+    frames:
+    - '&5&l%player%'
+    delay: -1
+  '35':
+    frames:
+    - '&7» &fPrestige: &e%prestige%'
+    - '&7» &fRank: %rank% &7-> &5%next-rank%'
+    delay: 60
+  '40':
+    frames:
+    - '&7» &fMultiplier: &6x%token-multiplier% ⛁'
+    - '&7» &fSell Multiplier: &cx%sell-multiplier%'
+    delay: 60
+  '50':
+    frames:
+    - '&7» &fBalance: &a$%balance%'
+    - '&7» &fTokens: &6⛁%tokens%'
+    delay: 60
+  '60':
+    frames:
+    - '&7» &fOnline: &b%online%'
+    delay: -1
+  '65':
+    frames:
+    - '&7&m--------------------'
+  '70':
+    frames:
+    - '&5&lKOTH &7(%koth%)'
+    delay: -1
+  '80':
+    frames:
+    - '&7» &fTime Left: &c%time-left%'
+    - '&7» &fCapturing: &e%capturing%'
+    delay: 100
+  '90':
+    frames:
+    - '&7&m--------------------'
+  '100':
+    frames:
+    - '&5&lGang'
+    delay: -1
+  '110':
+    frames:
+    - '&7» &fCreate a gang'
+    delay: -1
+  '120':
+    frames:
+    - '&7» &fusing: &a/gang create'
+    delay: -1
+  '130':
+    frames:
+    - '&7&m--------------------'
+    delay: -1

@@ -1,0 +1,11 @@
+display-name: '&4&lDamage Item &7(Off Hand)'
+lore:
+  - '&7Hold this in your off hand to have a 10% chance'
+  - '&7to receive strength & regeneration 2 for 10 seconds.'
+material: FIRE_CHARGE
+default-amount: 1
+cooldown-seconds: 45
+exclusive: false
+consumable: false
+regen-seconds: 10
+strength-seconds: 10

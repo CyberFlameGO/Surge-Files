@@ -1,0 +1,39 @@
+menu-settings:
+  title: Coin Flips
+  size: 27
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore:
+      - ''
+      item-flags:
+      - HIDE_ENCHANTS
+      enchants:
+        durability: 10
+      data: 3
+      amount: 1
+  page:
+    previous-slot: 1
+    next-slot: 9
+    button-slots: 10,11,12,13,14,15,16,17,18
+  info-button:
+    slot: 5
+    name: "&6&lYour Stats"
+    lore:
+      - '&8&m--------------------------'
+      - '&eWLR&7: &a%wins%&7|&c%losses%'
+      - '&8&m--------------------------'
+  button-format:
+    name: "&6&l%player%'s Coin Flip"
+    lore:
+      - '&8&m--------------------------'
+      - '&8%sent-at%'
+      - ''
+      - '&eAmount&7: &f%amount%'
+      - '&eSide&7: &f%side%'
+      - '&eWLR&7: &a%wins%&7|&c%losses%'
+      - ''
+      - '&7Click to accept this coin flip'
+      - '&8&m--------------------------'

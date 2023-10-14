@@ -1,0 +1,11 @@
+display-name: "&6&lScrambler"
+lore:
+  - "&7Throw this and anyone within"
+  - "&7a 4x4 radius will scramble their"
+  - "&7hotbar items."
+material: "EGG"
+default-amount: 2
+cooldown-seconds: 90
+radius: 4
+exclusive: false
+consumable: true

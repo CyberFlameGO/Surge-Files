@@ -1,0 +1,45 @@
+claim-wand:
+  material: "DIAMOND_HOE"
+  name: '&b&lClaim Wand'
+  lore:
+    - ''
+    - '&e&lClaim Help'
+    - '&7> Left Click to set the 1st position'
+    - '&7> Right Click to set the 2nd position'
+    - '&7> Shift + Right Click claims everything'
+    - '  within that selection.'
+    - '&7> Drop this to cancel the process'
+    - ' '
+  item-flags:
+    - "HIDE_ENCHANTS"
+  enchants:
+    durability: 10
+  data: 0
+
+layer:
+  claims:
+    enable: true
+    label: "Faction Claims"                  # The label for the layer
+    format: "{faction}'s Claim"       # Variables: {clan}, {tag}, {member_count}, (more placeholders: https://github.com/RoinujNosde/Dynmap-SimpleClans/wiki/Placeholders), Colors: &1, New line is pipe symbol: |
+    layer-priority: 1               # Ordering priority in layer menu (higher shows on top)
+    hide-by-default: false          # Make home layer hidden by default
+    min-zoom: 0                     # Set minimum zoom level when markers should be visible (0=default, any zoom)
+    hidden-lands: []                # Any clan tags added to this list will be hidden from view.
+    style:
+      based-on-tag: false           # Fill and Line styles will be based on the clan tag colors
+      fill:
+        color: "#57b356"            # The default color (green) of the fill
+        opacity: 0.35               # The default opacity for the fill
+      line:
+        color: "#2d682d"            # The default color (green) of the line
+        opacity: 0.8                # The default opacity for the line
+        weight: 3                   # The default weight of the line
+  homes:
+    enable: true
+    default-icon: "factionhome"        # Set the icon used if the clan doesn't set one, DON'T type the file extension
+    label: "Faction Homes"             # The label for the layer
+    format: "{faction}'s HQ"       # Variables: {clan}, {tag}, {member_count}, (more placeholders: https://github.com/RoinujNosde/Dynmap-SimpleClans/wiki/Placeholders), Colors: &1, New line is pipe symbol: |
+    layer-priority: 10              # Ordering priority in layer menu (higher shows on top)
+    hide-by-default: false          # Make home layer hidden by default
+    min-zoom: 0                     # Set minimum zoom level when markers should be visible (0=default, any zoom)
+    hidden-markers: []              # Any clan tags added to this list will be hidden from view, include "world:<worldname>" in the list to hide all clan homes in an entire world

@@ -1,0 +1,15 @@
+menu-settings:
+  size: 27
+  title: "Shop"
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore: []
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        durability: 10
+      data: 0
+      amount: 1

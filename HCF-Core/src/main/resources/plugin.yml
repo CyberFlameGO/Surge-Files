@@ -1,0 +1,7 @@
+name: Samurai
+version: 1.0
+author: LBuddyBoy
+main: dev.lbuddyboy.samurai.Samurai
+api-version: 1.19
+depend: [ ProtocolLib, Flash, lLibs ]
+softdepend: [ LunarClient-API ]

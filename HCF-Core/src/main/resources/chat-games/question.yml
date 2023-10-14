@@ -1,0 +1,42 @@
+questions:
+  1:
+    question: "What is the name of the server you are currently playing?"
+    answers:
+      - 'SteelPvP'
+      - 'steelpvp.com'
+  2:
+    question: "What time do our SOTW's take place?"
+    answers:
+      - '4 PM'
+      - '4 PM EST'
+  3:
+    question: "Who is the lead developer of SteelPvP?"
+    answers:
+      - 'LBuddyBoy'
+  4:
+    question: "Who is an Owner of SteelPvP?"
+    answers:
+      - 'LBuddyBoy'
+
+start-message:
+  - " "
+  - "&g&lQuestion Game"
+  - " "
+  - "&7┃ &fRespond with the correct answer"
+  - "&7┃ &fto receive a &gPartner Key&7&o."
+  - " "
+  - "&7┃ &fQuestion&7: &g%question%"
+  - " "
+
+solved-message:
+  - ""
+  - "&g&lQuestion Game"
+  - "&7%question%"
+  - ""
+  - "&7┃ &fWinner&7: &g%winner%"
+  - "&7┃ &fAnswer&7: &g%answer%"
+  - "&7┃ &fTime&7: &g%solve-time%s"
+  - ""
+
+win-commands:
+  - "goldencrates givekey %player% Partner 1"

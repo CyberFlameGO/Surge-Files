@@ -1,0 +1,6 @@
+.settings/
+.idea/
+target/
+backend/node_modules/
+build/
+.env

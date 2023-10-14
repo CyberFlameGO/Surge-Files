@@ -1,0 +1,13 @@
+<configuration>
+    <property name="DEV_HOME" value="/logs"/>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %nopex[%d{"yyyy-MM-dd' - 'HH:mm:ss"}] [%-8thread] [%level] [%logger{0}:%line]: %msg%n%ex
+            </pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

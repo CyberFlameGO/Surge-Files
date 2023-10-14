@@ -1,0 +1,36 @@
+display-name: '&c&lBlaze Pet'
+rarity: ultimate
+multiplier: 3.75
+lore:
+- ' '
+- '&a&lRIGHT CLICK'
+- '&7Click to receive a 3.75x'
+- '&7experience multiplier.'
+- ' '
+- '&e&lLevel: &7%level%'
+- '&e&lXP: &7%experience%/%needed-experience%'
+- ' '
+menu-lore:
+- ' '
+- '&a&lRIGHT CLICK'
+- '&7Click to receive a 3.75x'
+- '&7experience multiplier.'
+- ' '
+- '&a&lLEVEL VARIATIONS'
+- '&71-25 (5-10 secs) [60s]'
+- '&726-50 (10-20 secs) [120s]'
+- '&751-75 (20-25 secs) [180s]'
+- '&776-100 (25-40 secs) [240s]'
+- ' '
+texture: 6ebb4d93feb49d904c61a8fa0eaeac41fe34442cafea7801038ebf7c381c8397
+max-level: 100
+cooldown-times:
+- 1-25;60
+- 26-50;120
+- 51-75;180
+- 76-100;240
+level-variations:
+- 1-25;5-10
+- 26-50;10-20
+- 51-75;20-25
+- 76-100;25-40

@@ -1,0 +1,62 @@
+MONGO:
+  USE: true
+  HOST: localhost
+  PORT: 27017
+  AUTHENTICATION:
+    ENABLED: false
+    USERNAME: ''
+    PASSWORD: ''
+
+staff-mode:
+  thru-compass:
+    material: "COMPASS"
+    name: "&gPhase Compass"
+    lore:
+      - '&7Right click to phase thru walls'
+
+  random-tp:
+    material: "CLOCK"
+    name: "&gRandom Teleport"
+    lore:
+      - '&7Right click to randomly teleport throughout players on the server'
+
+  vanish-on:
+    material: "LIME_DYE"
+    name: "&aVanish (On)"
+    lore:
+      - '&7Click to toggle off your vanish'
+
+  vanish-off:
+    material: "GRAY_DYE"
+    name: "&aVanish (Off)"
+    lore:
+      - '&7Click to toggle on your vanish'
+
+  lastpvp:
+    material: "DIAMOND"
+    name: "&cLast PvP"
+    lore:
+      - '&7Click to teleport to the last pvp'
+
+  better-view:
+    material: "WHITE_CARPET"
+    name: "&gSpectator Mode"
+    lore:
+      - '&7Click to go into spectator mode.'
+  freezer:
+    material: "ICE"
+    name: "&gFreezer"
+    lore:
+      - '&7Right click a player to freeze them'
+
+  inspector:
+    material: "BOOK"
+    name: "&gInspector"
+    lore:
+      - '&7Right click a player to see their inventory'
+
+  worldedit:
+    material: "WOODEN_AXE"
+    name: "&gWorldEdit"
+    lore:
+      - '&7Use this to manage worldedit'

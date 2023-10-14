@@ -1,0 +1,22 @@
+display-name: "&eExample"
+hologram:
+  offset: 1.0
+  enabled: true
+  floating-key: true
+  lines:
+    - '&eExample'
+    - '&7Crate'
+
+key:
+  material: "TRIPWIRE_HOOK"
+  name: "&eExample Key"
+  lore:
+    - '&7Click an example crate to open!'
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+
+items:
+locations:

@@ -1,0 +1,9 @@
+name: lCrates
+version: '1.0'
+main: dev.lbuddyboy.crates.lCrates
+authors: [ LBuddyBoy ]
+api-version: 1.19
+softdepend:
+  - HolographicDisplays
+  - pCore
+  - Samurai

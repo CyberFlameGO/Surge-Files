@@ -1,0 +1,156 @@
+book:
+  material: "BOOK"
+  name: "%color%%display% %level%"
+  lore:
+    - '&f%description%'
+    - ''
+    - '&2%success%&7/&4%destroy%&f chance to destroy the'
+    - '&fitem once drag and dropped on to the applicable'
+    - '&fitems.'
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+black-scroll:
+  material: "INK_SAC"
+  name: "&c&lBlack Scroll"
+  lore:
+    - '&fRemoves a random enchant.'
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+white-scroll:
+  lore-addition: "&7*&8*&7* &f&lPROTECTED &7*&8*&7*"
+  material: "PAPER"
+  name: "&f&lWhite Scroll"
+  lore:
+    - '&fProtect your item from being destroyed whilst'
+    - '&fenchanting once drag and dropped on the item.'
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+holy-white-scroll:
+  lore-addition: "&7*&8*&7* &e&lHOLY PROTECTED &7*&8*&7*"
+  material: "PAPER"
+  name: "&e&l*HOLY* &f&lWhite Scroll"
+  lore:
+    - '&fProtect your item from being dropped upon death!'
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+transmog-scroll:
+  material: "PAPER"
+  name: "&d&lTransmog Scroll"
+  lore:
+    - '&fOrganize your enchnats on your item & make it look pretty.'
+  item-flags:
+    - HIDE_ENCHANTS
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+armor-orb:
+  material: "SLIME_BALL"
+  name: "&e&lARMOR ORB"
+  lore:
+    - '&fAdd an extra enchant to your max lore.'
+  item-flags:
+    - HIDE_ENCHANTS
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+weapon-orb:
+  material: "SLIME_BALL"
+  name: "&e&lWEAPON ORB"
+  lore:
+    - '&fAdd an extra enchant to your max lore.'
+  item-flags:
+    - HIDE_ENCHANTS
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+
+rarities: # you can change these and add any your want to add
+  Common:
+    displayName: "Common"
+    color: "&7"
+    successRange: "57-97"
+    destroyRange: "20-97"
+    openItem:
+      material: "BOOK"
+      name: "&7&lCommon Book"
+      lore:
+        - '&fRight click to receive a random &7Common &fEnchantment book!'
+      item-flags: []
+      enchants: []
+      data: 0
+      amount: 1
+    weight: 100
+    xpNeeded: 15
+  Epic:
+    displayName: "Epic"
+    color: "&5"
+    successRange: "40-97"
+    destroyRange: "20-97"
+    openItem:
+      material: "BOOK"
+      name: "&5&lEpic Book"
+      lore:
+        - '&fRight click to receive a random &5Epic &fEnchantment book!'
+      item-flags: []
+      enchants: []
+      data: 0
+      amount: 1
+    weight: 150
+    xpNeeded: 30
+  Legendary:
+    displayName: "Legendary"
+    color: "&6"
+    successRange: "32-97"
+    destroyRange: "20-97"
+    openItem:
+      material: "BOOK"
+      name: "&6&Legendary Book"
+      lore:
+        - '&fRight click to receive a random &6Legendary &fEnchantment book!'
+      item-flags: []
+      enchants: []
+      data: 0
+      amount: 1
+    weight: 200
+    xpNeeded: 45
+  Supreme:
+    displayName: "Supreme"
+    color: "&c"
+    successRange: "22-97"
+    destroyRange: "20-97"
+    openItem:
+      material: "BOOK"
+      name: "&c&lSupreme Book"
+      lore:
+        - '&fRight click to receive a random &cSupreme &fEnchantment book!'
+      item-flags: []
+      enchants: []
+      data: 0
+      amount: 1
+    weight: 250
+    xpNeeded: 60

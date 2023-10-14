@@ -1,0 +1,27 @@
+items:
+  EnderButt:
+    material: "ENDER_PEARL"
+    name: "&6Ender Butt"
+    lore:
+    amount: 1
+    data: 0
+    slot: 1
+    clicks:
+      - 'RIGHT_CLICK_AIR'
+      - 'RIGHT_CLICK_BLOCK'
+    action:
+      type: "ENDER_BUTT"
+      value: "none" # this doesn't need a value
+  Server-Selector:
+    material: "COMPASS"
+    name: "&6Server Selector"
+    lore:
+    amount: 1
+    data: 0
+    slot: 5
+    clicks:
+      - 'RIGHT_CLICK_AIR'
+      - 'RIGHT_CLICK_BLOCK'
+    action:
+      type: "OPEN_MENU"
+      value: "Server-Selector"

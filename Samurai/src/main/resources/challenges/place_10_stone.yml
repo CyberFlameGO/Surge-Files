@@ -1,0 +1,16 @@
+display-name: Place 10 Stone Blocks
+category: week-1
+challenge-type: PLACE_BLOCK
+value: STONE
+xp: 20
+neededProgress: 10
+display-item:
+  material: STONE
+  name: §6§lPlace 10 Stone Blocks
+  lore:
+  - '§eXP Reward§7: §f%xp%'
+  - '§7- §eCurrent Progress§7: §f%progress%'
+  item-flags:
+  - HIDE_ENCHANTS
+  data: 0
+  amount: 10

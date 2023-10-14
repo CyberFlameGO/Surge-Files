@@ -1,0 +1,787 @@
+# 
+# Should we keep UPC Enchanted pickaxes in players inventory when they die?
+messages:
+  no_pickaxe_found: '&cYou don''t have a pickaxe!'
+  enchant_max_level: '&d[Enchants] &aYou''ve already reached the max level for this
+    enchant.'
+  enchant_max_level_exceed: '&d[Enchants] &cThe transaction exceeds the enchantment
+    maximum level.'
+  enchant_min_level_exceed: '&d[Enchants] &cThe transaction exceeds the enchantment
+    minimum level.'
+  not_enough_tokens: '&cYou don''t have enough tokens!'
+  not_enough_gems: '&cYou don''t have enough gems!'
+  enchant_bought: '&c&l-%tokens% TOKENS'
+  enchant_bought_multiple: '&d[Enchants] &aYou have bought %amount% %enchant% levels
+    for %tokens% tokens.'
+  enchant_refunded: '&d[Refunds] &aYou have refunded %amount% %enchant% levels.'
+  enchant_tokens_back: '&d[Refunds] &aYou''ve received %tokens% tokens.'
+  enchant_cant_disenchant: '&d[Refunds] &cThis enchant can''t be refunded!'
+  enchant_no_level: '&d[Enchants] &cYou don''t have this enchant!'
+  charity_other: '&a&l+ $%amount% &7(From %player%''s Charity)'
+  charity_your: '&a&l+ $%amount% &7(From Your Charity)'
+  blessing_other: '&6&l+ %amount% TOKENS &7(From %player%''s Blessing)'
+  blessing_your: '&6&l+ %amount% TOKENS &7(From Your Blessing)'
+  layer_disabled: '&cYou have disabled layer.'
+  layer_enabled: '&aYou have enabled layer.'
+  block_booster_on: '&aYou have enabled block booster. &7(2x Blocks / 5 Minutes)'
+  block_booster_off: '&cYour block booster has worn off.'
+  explosive_disabled: '&cYou have disabled explosive.'
+  explosive_enabled: '&aYou have enabled explosive.'
+  value_no_permission: '&d[Value] &8Â» &7No Permission, Unlock at &fstore.xprison.net&7.'
+  value_no_pickaxe: '&cYou must have a pickaxe in your hand.'
+  value_value: '&a%player%''s Pickaxe Value&7: &e%tokens% Tokens'
+  value_cooldown: '&cPlease wait %time% seconds before attempting this command again.'
+  pickaxe_given: '&aYou have given a pickaxe to %player%.'
+  pickaxe_received: '&aYou have received a pickaxe from %sender%.'
+  pickaxe_inventory_full: '&c%player% has full inventory!'
+  prestige_finder: '&d[Prestiges] &aYou''ve just found %prestige%x prestige levels
+    while mining.'
+  transaction_in_progress: '&cPlease wait for your other transaction to complete.'
+  pickaxe_level_required: '&d[Enchants] &cYour pickaxe has to be level %pickaxe_level%&c
+    in order to enchant this!'
+  enchant_bought_gems: '&c&l-%gems% GEMS'
+  enchant_bought_multiple_gems: '&d[Enchants] &aYou''ve purchased %amount% %enchant%
+    levels for %gems% gems.'
+  enchant_gems_back: '&d[Refunds] &aYou have received %gems% gems.'
+keep-pickaxes-on-death: true
+open-enchant-menu-action: RIGHT_CLICK_AIR,RIGHT_CLICK_BLOCK
+enchant_menu:
+  title: '&7Enchants Menu'
+  empty_slots: STAINED_GLASS_PANE:7
+  lines: 6
+  pickaxe_slot: 15
+  pickaxe_enabled: true
+  item:
+    lore:
+      - '&7%description%'
+      - ' '
+      - '&ePrice&7: &a%cost%'
+      - '&eCurrent Level&7: &b%current_level%'
+      - '&eMax Level&7: &3%max_level%'
+      - '&eTrigger Chance&7: &d%chance%'
+      - ' '
+      - '&fLeft-Click&7 to purchase 1 level.'
+      - '&fRight-Click&7 to purchase 10 levels.'
+      - '&fMiddle-Click&7 to purchase 100 levels.'
+      - '&fPress ''Q''&7 to purchase as many as you can.'
+      - ' '
+      - '&cYour pickaxe must be level %pickaxe_level% to purchase.'
+  help_item:
+    enabled: false
+    material: NAME_TAG
+    slot: 16
+    name: '&6&lHOW IT WORKS?'
+    lore:
+      - ' '
+      - '&6&l* &eLeft-Click &8Â» &7Buy 1 Level'
+      - ' '
+      - '&6&l* &eRight-Click &8Â» &7Buy 10 Levels'
+      - ' '
+      - '&6&l* &eMiddle-Click &8Â» &7Buy 100 Levels'
+      - ' '
+      - '&6&l* &ePress Q &8Â» &7Buy MAX you can afford'
+      - ' '
+      - '&7&o(( &f&oClick&7&o on the enchant to buy ))'
+  gem_item:
+    enabled: true
+    material: EMERALD
+    slot: 13
+    name: '&2&lGem Enchants'
+    lore:
+      - '&7Click to open the gem enchants menu.'
+  disenchant_item:
+    enabled: true
+    material: FLINT_AND_STEEL
+    slot: 11
+    name: '&c&lRefund Enchants'
+    lore:
+      - '&7Click to open the Refund menu.'
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg1NmNjYWI2ZjcyYjZmMzczMzI4NDBhMjc3OWJiNDI3NThiYmIyYzAxNWY1NGNlNTM3NDBjYjBmMWNiNGNhMSJ9fX0=
+gem_enchant_menu:
+  title: '&aGem Enchants Menu'
+  empty_slots: STAINED_GLASS_PANE:7
+  lines: 6
+  pickaxe_slot: 4
+  pickaxe_enabled: true
+  item:
+    lore:
+      - '&7%description%'
+      - ' '
+      - '&aGems&7: &a%cost%'
+      - '&aCurrent Level&7: &b%current_level%'
+      - '&aMax Level&7: &3%max_level%'
+      - '&aTrigger Chance&7: &d%chance%'
+      - ' '
+      - '&fLeft-Click&7 to purchase 1 level.'
+      - '&fRight-Click&7 to purchase 10 levels.'
+      - '&fMiddle-Click&7 to purchase 100 levels.'
+      - '&fPress ''Q''&7 to purchase as many as you can.'
+      - ' '
+      - '&cYour pickaxe must be level %pickaxe_level% to purchase.'
+  help_item:
+    enabled: false
+    material: NAME_TAG
+    slot: 16
+    name: '&6&lHOW IT WORKS?'
+    lore:
+      - ' '
+      - '&6&l* &eLeft-Click &8Â» &7Buy 1 Level'
+      - ' '
+      - '&6&l* &eRight-Click &8Â» &7Buy 10 Levels'
+      - ' '
+      - '&6&l* &eMiddle-Click &8Â» &7Buy 100 Levels'
+      - ' '
+      - '&6&l* &ePress Q &8Â» &7Buy MAX you can afford'
+      - ' '
+      - '&7&o(( &f&oClick&7&o on the enchant to buy ))'
+  disenchant_item:
+    enabled: false
+    material: FLINT_AND_STEEL
+    slot: 2
+    name: '&c&lRefund Enchants'
+    lore:
+      - '&7Click to open the Refund menu.'
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg1NmNjYWI2ZjcyYjZmMzczMzI4NDBhMjc3OWJiNDI3NThiYmIyYzAxNWY1NGNlNTM3NDBjYjBmMWNiNGNhMSJ9fX0=
+disenchant_menu:
+  title: '&7Refund Menu'
+  empty_slots: STAINED_GLASS_PANE:7
+  lines: 6
+  pickaxe_slot: 4
+  pickaxe_enabled: true
+  item:
+    lore:
+      - '&eCurrent Level&7: &6%current_level%'
+      - '&eRefund Price&7: &c%refund%'
+      - ' '
+      - '&fLeft-Click&7 to refund 1 level.'
+      - '&fRight-Click&7 to refund 10 levels.'
+      - '&fMiddle-Click&7 to refund 100 levels.'
+      - '&fPress ''Q''&7 to refund all of your levels.'
+  help_item:
+    enabled: false
+    material: NAME_TAG
+    slot: 16
+    name: '&6&lHOW IT WORKS?'
+    lore:
+      - ' '
+      - '&6&l* &eLeft-Click &8Â» &7-1 Levels'
+      - ' '
+      - '&6&l* &eRight-Click &8Â» &7-10 Levels'
+      - ' '
+      - '&6&l* &eMiddle-Click &8Â» &7-100 Levels'
+      - ' '
+      - '&6&l* &e''Q'' &8Â» &7-ALL Levels'
+      - '&7&o(( &f&oClick&7&o on the enchant name to disenchant ))'
+  Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg1NmNjYWI2ZjcyYjZmMzczMzI4NDBhMjc3OWJiNDI3NThiYmIyYzAxNWY1NGNlNTM3NDBjYjBmMWNiNGNhMSJ9fX0=
+enchants:
+  '1':
+    RawName: efficiency
+    Name: '&aEfficiency'
+    GuiName: '&a&lEfficiency'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 30
+    Increase-Cost-by: 10
+    Max: 500
+    Cost: 10
+    Description:
+      - '&7Increase your mining speed.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 30
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzEzZjg3NjhiM2Y1YjYxNGQ3NTg5ZmIyNzNjNmQzYjliMDIwODMxMGEwMjViYjk5YTI3MWM3M2M0YjM2ZWI3MCJ9fX0=
+    Gem-Enchant: false
+  '2':
+    RawName: unbreaking
+    Name: '&bUnbreaking'
+    GuiName: '&bUnbreaking'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 28
+    Increase-Cost-by: 75
+    Max: 300
+    Cost: 75
+    Description:
+      - '&7&o(( Prevents your pickaxe from breaking while mining ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 28
+      Percentage: 50.0
+    Gem-Enchant: false
+  '3':
+    RawName: fortune
+    Name: '&aFortune'
+    GuiName: '&a&lFortune'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 29
+    Increase-Cost-by: 75
+    Max: -1
+    Cost: 75
+    Blacklist:
+      - BEDROCK
+    Description:
+      - '&7Receive more blocks while mining.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 29
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNhYzdhZWE0MDJjZTYyOWE0ODMzYTQ1MjI4ZGY0NWE1MDYyZDExMmYwZjgyNmMzYzM0M2NmMDY4MDkxY2JlYSJ9fX0=
+    Gem-Enchant: false
+  '4':
+    RawName: haste
+    Name: '&5Haste'
+    GuiName: '&5&lHaste'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 23
+    Increase-Cost-by: 2500
+    Max: 5
+    Cost: 2500
+    Description:
+      - '&7Increase your haste level while holding your pickaxe.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 23
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRjYWJlYzE4Mzk0ZjQ4MTkxNTI2ZDkwNTllNDU4ZTAxMTZmZTg0Yjc5YzY0NWNhNTQ2NDkzNzdiNjhmNTQzYiJ9fX0=
+    Gem-Enchant: false
+  '5':
+    RawName: speed
+    Name: '&5Speed'
+    GuiName: '&5&lSpeed'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 28
+    Increase-Cost-by: 10000
+    Max: 2
+    Cost: 10000
+    Description:
+      - '&7Gain movement speed while holding your pickaxe.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 21
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzEzZjg3NjhiM2Y1YjYxNGQ3NTg5ZmIyNzNjNmQzYjliMDIwODMxMGEwMjViYjk5YTI3MWM3M2M0YjM2ZWI3MCJ9fX0=
+    Gem-Enchant: false
+  '6':
+    RawName: jumpboost
+    Name: '&5Jump Boost'
+    GuiName: '&5&lJump Boost'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 22
+    Increase-Cost-by: 5000
+    Max: 5
+    Cost: 5000
+    Description:
+      - '&7Gain jump boost while holding your pickaxe.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 22
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjRjYWJlYzE4Mzk0ZjQ4MTkxNTI2ZDkwNTllNDU4ZTAxMTZmZTg0Yjc5YzY0NWNhNTQ2NDkzNzdiNjhmNTQzYiJ9fX0=
+    Gem-Enchant: false
+  '7':
+    RawName: nightvision
+    Name: '&cNight Vision'
+    GuiName: '&cNight Vision'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 33
+    Increase-Cost-by: 0
+    Max: 1
+    Cost: 10000
+    Description:
+      - '&7&o(( Ability to see in the dark while mining ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 33
+      Percentage: 50.0
+    Gem-Enchant: false
+  '8':
+    RawName: fly
+    Name: '&cFly'
+    GuiName: '&cFly'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 34
+    Increase-Cost-by: 350
+    Max: 1
+    Cost: 10000
+    Description:
+      - '&7&o(( Ability to fly while holding pickaxe ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 34
+      Percentage: 50.0
+    Gem-Enchant: false
+  '9':
+    RawName: explosive
+    Name: '&aExplosive'
+    GuiName: '&a&lExplosive'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 32
+    Increase-Cost-by: 125
+    Cooldown: 0
+    Max: 500
+    Chance: 0.2
+    Cost: 125
+    Description:
+      - '&7Explodes nearby blocks while mining.'
+    Count-Blocks-Broken: true
+    Explosion-Type: CUBE
+    Sounds: true
+    Refund:
+      Enabled: true
+      InGuiSlot: 32
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmRkNDM2NGZlMmIxOWE2YzExOWQxN2I1Njk0NGVmZjU2NmMxNGI0ZmVhNDVlOWI0YmMzMjkyOGQ1OTdmNDY4In19fQ==
+    Gem-Enchant: false
+  '10':
+    RawName: layer
+    Name: '&bLayer'
+    GuiName: '&b&lLayer'
+    Material: BOOK
+    Enabled: true
+    Chance: 0.2
+    InGuiSlot: 33
+    Increase-Cost-by: 200
+    Max: 500
+    Cost: 200
+    Description:
+      - '&7Increase chance of breaking a full mine layer.'
+    Count-Blocks-Broken: true
+    Refund:
+      Enabled: true
+      InGuiSlot: 40
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdhMzYzZmZlNmIwOTEyNjU4ZjVlNTE5NjNkMDJiYzcwNzZiOTIzZmVlZGM0NzlmODY5NDUzNGIxNDY1OWFkOCJ9fX0=
+    Gem-Enchant: false
+  '11':
+    RawName: charity
+    Name: '&cCharity'
+    GuiName: '&cCharity'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 37
+    Increase-Cost-by: 25
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 1000
+    Cost: 25
+    Messages-Enabled: true
+    Description:
+      - '&7&o(( Chance to give to everyone online money while mining ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 37
+      Percentage: 50.0
+    Gem-Enchant: false
+  '12':
+    RawName: salary
+    Name: '&aGem Finder'
+    GuiName: '&a&lGem Finder'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 34
+    Increase-Cost-by: 35
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 5
+    Cost: 35
+    Description:
+      - '&7Receive more gems while mining.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 38
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJmYTg0MDUyMTQ4OTg5ZGUyMDZjZGIzMzEzNWNlYjUzOWYzMzk4NzM3NGYzMGRmNzM0YTE3OWU4NzNlNWQyMiJ9fX0=
+    Gem-Enchant: false
+  '13':
+    RawName: blessing
+    Name: '&eBlessing'
+    GuiName: '&eBlessing'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 39
+    Increase-Cost-by: 25
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 25
+    Messages-Enabled: true
+    Description:
+      - '&7&o(( Chance to give to everyone online tokens while mining ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 39
+      Percentage: 50.0
+    Gem-Enchant: false
+  '14':
+    RawName: tokenator
+    Name: '&aTokenator'
+    GuiName: '&a&lTokenator'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 29
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7Receive more tokens while mining.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 31
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA2ZWUxZDM3MDRmNDQ1ODc2MTlhMjI1MmMzMzM5YWY3ODU1MjgwMjAzYjI1OTE4MWVmZDE4NzI0NWFiZjgyNCJ9fX0=
+    Gem-Enchant: false
+  '15':
+    RawName: keyfinder
+    Name: '&aKey Finder'
+    GuiName: '&a&lKey Finder'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 30
+    Increase-Cost-by: 350
+    Max: 500
+    Chance: 0.2
+    Cost: 350
+    Description:
+      - '&7Increase chance of receiving crate keys while mining.'
+    Commands:
+      - cc give physical Coal 1 %player%
+      - cc give physical Iron 1 %player%
+      - cc give physical Gold 1 %player%
+      - cc give physical Diamond 1 %player%
+      - cc give physical Emerald 1 %player%
+      - cc give physical Token 1 %player%
+      - cc give physical Token 2 %player%
+    Refund:
+      Enabled: true
+      InGuiSlot: 35
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UyZWI0NzUxZTNjNTBkNTBmZjE2MzUyNTc2NjYzZDhmZWRmZTNlMDRiMmYwYjhhMmFhODAzYjQxOTM2M2NhMSJ9fX0=
+    Gem-Enchant: false
+  '16':
+    RawName: prestigefinder
+    Name: '&6Prestige Finder'
+    GuiName: '&6&lPrestige Finder'
+    Material: BOOK
+    Enabled: true
+    Amount-To-Give: level
+    InGuiSlot: 39
+    Increase-Cost-by: 175
+    Max: 500
+    Chance: 0.2
+    Cost: 175
+    Command: prestigeadmin add %player% %amount%
+    Description:
+      - '&7Increase chance of receiving prestige levels while mining.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 50
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjEyYTA0NDU4NDRjMTRhYWI0ODUzN2Y4MzlhMjI4Nzc0MTdmZTllNDM2OWE0ZGQ4ZmE3M2FmM2M0MzFiNjViMSJ9fX0=
+    Gem-Enchant: false
+  '17':
+    RawName: blockbooster
+    Name: '&bBlock Booster'
+    GuiName: '&b&lBlock Booster'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 38
+    Increase-Cost-by: 225
+    Max: 500
+    Chance: 0.2
+    Cost: 500
+    Description:
+      - '&7Increased chance of receiving 2x blocks mined for 1 minute.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 42
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI3OTU3YWVkZGRjMTczYzcyOTRhZmRhNmUzZmFmY2E2Y2JjOWMzMTk4ZDAzNjJlMmViMzE2NTYwYjQ5Nzc1NSJ9fX0=
+    Gem-Enchant: false
+  '18':
+    RawName: keyalls
+    Name: '&cKeyalls'
+    GuiName: '&cKeyalls'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 44
+    Increase-Cost-by: 350
+    Max: 500
+    Chance: 0.2
+    Cost: 350
+    Description:
+      - '&7&o(( Ability to give everyone crate keys while mining ))'
+    Pickaxe-Level-Required: 1
+    Commands:
+      - cc giveall physical Token 1
+      - cc giveall physical Token 2
+      - cc giveall physical Coal 1
+      - cc giveall physical Iron 1
+      - cc giveall physical Gold 1
+    Refund:
+      Enabled: true
+      InGuiSlot: 44
+      Percentage: 50.0
+    Gem-Enchant: false
+  '19':
+    RawName: autosell
+    Name: '&eAutosell'
+    GuiName: '&eAutosell'
+    Material: BOOK
+    Enabled: false
+    InGuiSlot: 45
+    Increase-Cost-by: 0
+    Max: 1
+    Chance: 25.0
+    Cost: 1000
+    Description:
+      - '&7&o(( Ability to sell all items while mining ))'
+    Pickaxe-Level-Required: 1
+    Messages-Enabled: true
+    Refund:
+      Enabled: true
+      InGuiSlot: 45
+      Percentage: 50.0
+    Gem-Enchant: false
+  '20':
+    RawName: voucher
+    Name: '&6Voucher Finder'
+    GuiName: '&6&lVoucher Finder'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 43
+    Increase-Cost-by: 5000
+    Max: 500
+    Chance: 0.2
+    Cost: 100000
+    Description:
+      - '&7Increase chance of receiving /coinshop coin vouchers while mining.'
+    Pickaxe-Level-Required: 50
+    Refund:
+      Enabled: true
+      InGuiSlot: 48
+      Percentage: 50.0
+    Commands:
+      '1':
+        command: voucher give %player% 5$
+        chance: 50
+      '2':
+        command: voucher give %player% 10$
+        chance: 25
+      '3':
+        command: voucher give %player% 25$
+        chance: 10
+      '4':
+        command: voucher give %player% 50$
+        chance: 5
+      '5':
+        command: voucher give %player% 50$
+        chance: 1
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2NTI0YjlkZTlhOWUwOTkyMWEzZDQyN2I5NGFiMDY0MmJmMTNkZGQ5OGJiNTMwODM0MDRlMGQ0NWJiMGY3YyJ9fX0=
+    Gem-Enchant: false
+  '21':
+    RawName: nuke
+    Name: '&bNuke'
+    GuiName: '&b&lNuke'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 41
+    Increase-Cost-by: 0
+    Max: 500
+    Chance: 0.2
+    Cost: 1000
+    Description:
+      - '&7Increase chance of breaking the whole mine.'
+    Pickaxe-Level-Required: 25
+    Remove-Blocks: true
+    Count-Blocks-Broken: true
+    Message: '&e&lENCHANT &8Â» &7You got &2&l$&a%money% &7from &c&lNuke &7activation.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 39
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjg4ZmI2YjJiM2VmYTZhYjI5OWY5ZjRlN2Q4YzFhMWQ3MzM4NzUzYmRmOGZlZjgxMDc1ZjIxNTU5NDNiYzY5In19fQ==
+    Gem-Enchant: false
+  '22':
+    RawName: gemfinder
+    Name: '&bGem Booster'
+    GuiName: '&b&lGem Booster'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 37
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7Increase chance of receiving gems while mining.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 41
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI3OTU3YWVkZGRjMTczYzcyOTRhZmRhNmUzZmFmY2E2Y2JjOWMzMTk4ZDAzNjJlMmViMzE2NTYwYjQ5Nzc1NSJ9fX0=
+    Gem-Enchant: false
+  '23':
+    RawName: gang-value-finder
+    Name: '&6Gang Value Finder'
+    GuiName: '&6&lGang Value Finder'
+    Material: BOOK
+    Enabled: true
+    InGuiSlot: 42
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7Increase chance of receiving gang value while mining.'
+    Refund:
+      Enabled: true
+      InGuiSlot: 49
+      Percentage: 50.0
+    Base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk3YmMwNDMzZjUxMWM2YTE0ZDUxZjg2YmZlYmI5ZTQ2NjFjYmIzZjYzMWU2OGUxMjhmNmNkZjAzODM0MDE4NCJ9fX0=
+    Gem-Enchant: false
+  '24':
+    RawName: meteor-attack
+    Name: '&aMeteor Attack'
+    GuiName: '&aMeteor Attack'
+    Material: OBSIDIAN
+    Enabled: true
+    Gem-Enchant: true
+    InGuiSlot: 21
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7&o(( Spawn destructive, but ore-rich meteors ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 18
+      Percentage: 50.0
+  '25':
+    RawName: jackpot
+    Name: '&aJackpot'
+    GuiName: '&aJackpot'
+    Material: GOLD_BLOCK
+    Enabled: true
+    Gem-Enchant: true
+    InGuiSlot: 22
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7&o(( Increased key finder percents & ability to find rank keys ))'
+    Commands:
+      - crate give Rank %player% 1
+    Refund:
+      Enabled: true
+      InGuiSlot: 27
+      Percentage: 50.0
+  '26':
+    RawName: doubleornothing
+    Name: '&aDouble or Nothing'
+    GuiName: '&aDouble or Nothing'
+    Material: GOLD_NUGGET
+    Enabled: true
+    Gem-Enchant: true
+    InGuiSlot: 23
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7&o(( Enchant procs will double for a short period of time ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 36
+      Percentage: 50.0
+  '27':
+    RawName: lightning
+    Name: '&aLightning'
+    GuiName: '&aLightning'
+    Material: FIRE_CHARGE
+    Enabled: true
+    Gem-Enchant: true
+    InGuiSlot: 29
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7&o(( Spawn a lightning strike on your mine ))'
+    Refund:
+      Enabled: true
+      InGuiSlot: 45
+      Percentage: 50.0
+  '28':
+    RawName: minionfinder
+    Name: '&aMinion Finder'
+    GuiName: '&aMinion Finder'
+    Material: ARMOR_STAND
+    Enabled: true
+    Gem-Enchant: true
+    InGuiSlot: 30
+    Increase-Cost-by: 6
+    Max: 500
+    Chance: 0.2
+    Amount-To-Give: level * 2
+    Cost: 12
+    Description:
+      - '&7&o(( Chance to find a minion whilst mining ))'
+    Commands:
+      - robot giverobot %player% lapis 1
+    Refund:
+      Enabled: true
+      InGuiSlot: 26
+      Percentage: 50.0
+Pickaxe:
+  lore:
+    - '&8&m------------------------'
+    - '&6Â» &fBlocks Mined&7: &6%Blocks%/%Blocks_Required%'
+    - '&6Â» &fLevel&7: &6%PickaxeLevel% &7[%PickaxeProgress%&7]'
+    - '&8&m------------------------'
+    - '&6Â» %Enchant-5%'
+    - '&6Â» %Enchant-6%'
+    - '&6Â» %Enchant-4%'
+    - '&6Â» %Enchant-3%'
+    - '&6Â» %Enchant-1%'
+    - '&6Â» %Enchant-14%'
+    - '&6Â» %Enchant-9%'
+    - '&6Â» %Enchant-15%'
+    - '&6Â» %Enchant-12%'
+    - '&6Â» %Enchant-21%'
+    - '&6Â» %Enchant-10%'
+    - '&6Â» %Enchant-22%'
+    - '&6Â» %Enchant-17%'
+    - '&6Â» %Enchant-20%'
+    - '&6Â» %Enchant-23%'
+    - '&6Â» %Enchant-16%'
+    - '&6Â» %Enchant-24%'
+    - '&6Â» %Enchant-25%'
+    - '&6Â» %Enchant-26%'
+    - '&6Â» %Enchant-27%'
+    - '&6Â» %Enchant-28%'
+first-join-pickaxe:
+  enabled: true
+  name: '&e%player%''s Pickaxe'
+  material: DIAMOND_PICKAXE
+  enchants:
+    - efficiency 10
+    - unbreaking 10
+    - fortune 10

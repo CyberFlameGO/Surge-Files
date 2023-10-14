@@ -1,0 +1,34 @@
+menu-settings:
+  title: "Daily Rewards"
+  size: 27
+  auto-fill:
+    enabled: true
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        durability: 10
+      data: 7
+      amount: 1
+  button-format:
+    name: '&6&lDaily Reward'
+    material: "FLOWER_BANNER_PATTERN"
+    data: 0
+    lore:
+      - '&8&m--------------------------'
+      - '&6Â» &fNext Reward&7: &e%reward-status%'
+      - ' '
+      - '&7Click to claim your daily reward'
+      - '&8&m--------------------------'
+
+daily-rewards:
+  day1:
+    weight: 1 # 1 = highest
+    name: "day-1"
+    display-name: "&6&l1x Ability Package"
+    commands:
+      - 'ability givepp %player% 1'

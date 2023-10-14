@@ -1,0 +1,43 @@
+game-settings:
+  minimum-start-players: 4
+  minimum-players: 12
+  max-players: 48
+  disabled: false
+host-item:
+  material: "END_CRYSTAL"
+  description: "Free For All. Every man for themselves. Last man standing wins. All players receive permanent invisibility & crystal pvp loadouts."
+
+scoreboard-lines:
+  waiting:
+    global:
+      - '&gPlayers&f: %players%/%max-players%'
+    voting:
+      - '&gMap Vote'
+      - '&7» %map-1%: %map-1-votes%'
+      - '&7» %map-2%: %map-2-votes%'
+      - '&7» %map-3%: %map-3-votes%'
+    voted:
+      - '&gMap&f: %voted-map%'
+    starting-waiting:
+      - ''
+      - '&a&oWaiting for %players-needed%'
+    starting-players-met:
+      - ''
+      - '&a&oStarting in %starting-in%s'
+  running:
+    - '&gRemaining&f: %players%/%started-with%'
+    - '&gPots&f: %pots%'
+    - '&gKills&f: %kills%'
+    - ' '
+    - '&gTop Kills'
+    - '&f1) %kills-1-name%: %kills-1%'
+    - '&f2) %kills-2-name%: %kills-2%'
+    - '&f3) %kills-3-name%: %kills-3%'
+  finished:
+    - '&gWinner&f: %winner%'
+    - '&gKills&f: %kills%'
+    - ' '
+    - '&gTop Kills'
+    - '&f1) %kills-1-name%: %kills-1%'
+    - '&f2) %kills-2-name%: %kills-2%'
+    - '&f3) %kills-3-name%: %kills-3%'

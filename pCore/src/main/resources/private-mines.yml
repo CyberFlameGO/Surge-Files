@@ -1,0 +1,93 @@
+increase-rank-every: 32
+grid:
+  world: private_mines
+  last_x: 1000
+  spacing: 1000
+private-mine-settings:
+  schematic-name: private-mine
+  spawn-location:
+    x: 0.0
+    y: 100.0
+    z: 0.0
+    pitch: 0.0
+    yaw: 90.0
+  pit-min:
+    x: -15.0
+    y: 82.0
+    z: 5.0
+    pitch: 0.0
+    yaw: 0.0
+  pit-max:
+    x: -27.0
+    y: 97.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  box-min:
+    x: -13.0
+    y: 75.0
+    z: 7.0
+    pitch: 0.0
+    yaw: 0.0
+  box-max:
+    x: -29.0
+    y: 97.0
+    z: -9.0
+    pitch: 0.0
+    yaw: 0.0
+private-mines-menu:
+  title: Mine Ranks
+  size: 54
+  buttons:
+    display-item:
+      name: '&d%mine-rank-display%'
+      lore:
+        - '&7This mine gives you the following blocks:'
+        - '%blocks%'
+        - ''
+        - '&7Status: %mine-rank-status%'
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        durability: 10
+      data: 7
+      amount: 1
+  page:
+    previous-slot: 1
+    next-slot: 9
+    button-slots: 10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54
+  back-button:
+    enabled: true
+    slot: 4
+ranks:
+  '1':
+    blocks:
+      - STONE;0;100
+    block-data: 0
+    display-name: Stone Rank
+    display-material: STONE;0
+    mine-size: 1
+  '2':
+    blocks:
+      - STONE;0;75
+      - COBBLESTONE;0;25
+    block-data: 0
+    display-name: Cobblestone Rank
+    display-material: COBBLESTONE;0
+    mine-size: 8
+  '3':
+    blocks:
+      - STONE;0;25
+      - COBBLESTONE;0;50
+      - STONE;5;25
+    block-data: 0
+    display-name: Andesite Rank
+    display-material: STONE;5
+    mine-size: 10

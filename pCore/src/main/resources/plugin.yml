@@ -1,0 +1,13 @@
+name: pCore
+version: '${project.version}'
+main: dev.lbuddyboy.pcore.pCore
+authors: [ LBuddyBoy ]
+depend:
+  - WorldEdit
+softdepend:
+  - Vault
+
+commands:
+  events:
+    aliases:
+      - event

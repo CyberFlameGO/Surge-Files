@@ -1,0 +1,30 @@
+bot-settings:
+  guild: 203023020320302
+  prefix: "-"
+  token: "token-here"
+  activity:
+    type: "PLAYING" # PLAYING STREAMING LISTENING WATCHING CUSTOM_STATUS COMPETING
+    value: "dev.lbuddyboy"
+
+mongo-uri: "mongodb://127.0.0.1:27017"
+
+redis: # Please note you still need redis if you want network syncing
+  host: "localhost"
+  port: 6379
+  auth:
+    enabled: false
+    password: ""
+  channel-id: 0
+  channel-name: "Flash|Global"
+
+mongo:
+  host: "localhost"
+  port: 27017
+  database: "Flash" # use this to determine the db name
+  auth:
+    enabled: false
+    username: ""
+    password: ""
+
+conversion: # roleId:rankname (CASE SENSITIVE)
+  - "roleId:rankname in game"

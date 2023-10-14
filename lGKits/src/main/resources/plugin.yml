@@ -1,0 +1,22 @@
+name: lGkits
+main: dev.lbuddyboy.gkits.lGKits
+version: 1.0
+author: LBuddyBoy
+softdepend:
+  - Samurai
+api-version: 1.19
+
+commands:
+  armorsets:
+  enchants:
+    aliases:
+      - allenchants
+  combinedce:
+  givegem:
+    aliases:
+      - givebook
+      - givece
+      - givecebook
+  enchanter:
+    aliases:
+      - ce

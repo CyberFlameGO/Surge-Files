@@ -1,0 +1,46 @@
+messages:
+  bought-sender: "&e&lAUCTION HOUSE &7▶ %buyer% has just purchased your %item% for %amount%"
+
+menu-settings:
+  title: "Auction House"
+  size: 54
+  auto-fill:
+    enabled: false
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - HIDE_ENCHANTS
+      data: 3
+      amount: 1
+  page:
+    previous-slot: 46
+    next-slot: 54
+    button-slots: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45
+  normal-format:
+    - '&7&m--------------------'
+    - '&8%expires-in%'
+    - ''
+    - '&eSeller&7: &f%seller%'
+    - '&ePrice&7: &f%price%'
+    - ''
+    - '&7Click to purchase this item.'
+    - '&7&m--------------------'
+  bin-format:
+    - '&7&m--------------------'
+    - '&8%expires-in%'
+    - ''
+    - '&eSeller&7: &f%seller%'
+    - '&ePrice&7: &f%price%'
+    - ''
+    - '&7Click to collect this item from the bin.'
+    - '&7&m--------------------'
+  personal-format:
+    - '&7&m--------------------'
+    - '&8%expires-in%'
+    - ''
+    - '&eSeller&7: &f%seller%'
+    - '&ePrice&7: &f%price%'
+    - '&7&m--------------------'

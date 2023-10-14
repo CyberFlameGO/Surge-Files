@@ -1,0 +1,4 @@
+name: lLibs
+version: '${project.version}'
+main: dev.lbuddyboy.libs.lLib
+authors: [ LBuddyBoy ]

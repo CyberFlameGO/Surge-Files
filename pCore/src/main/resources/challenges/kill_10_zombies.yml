@@ -1,0 +1,17 @@
+display-name: Kill 10 Zombies
+category: week-1
+challenge-type: KILL_ENTITY
+value: ZOMBIE
+xp: 20
+neededProgress: 10
+display-item:
+  material: GOLD_SWORD
+  name: §6§lKill 10 Zombies
+  lore:
+  - '§eXP Reward§7: §f%xp%'
+  - '§7- §eCurrent Progress§7: §f%progress%'
+  item-flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  data: 0
+  amount: 10

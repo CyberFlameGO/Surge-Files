@@ -1,0 +1,32 @@
+display-name: "&b&lDiamond Robot"
+produce-time: 1 # seconds
+max-level: 5
+tokens-per-produce: 28
+block-data: "DIAMOND_BLOCK:0"
+helmet:
+  material: "LEATHER_HELMET"
+  data: 0
+  color: "AQUA" # if it's not leather just leave blank
+chestplate:
+  material: "LEATHER_CHESTPLATE"
+  color: "AQUA" # if it's not leather just leave blank
+leggings:
+  material: "LEATHER_LEGGINGS"
+  color: "AQUA" # if it's not leather just leave blank
+boots:
+  material: "LEATHER_BOOTS"
+  color: "AQUA" # if it's not leather just leave blank
+held-item:
+  material: "DIAMOND_PICKAXE"
+  glowing: true
+display-item:
+  material: "MONSTER_EGG"
+  name: "&b&lDiamond Robot &7(Tier V)"
+  lore:
+    - '&7Place this diamond robot on the ground to generate tokens!'
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 54
+  amount: 1

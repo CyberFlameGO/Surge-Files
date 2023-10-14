@@ -1,0 +1,16 @@
+motd-active-timer:
+  new-lines: # limited to 2 lines 1.13 and up (Uses gradients)
+    - "&x&f&b&9&4&4&aLBuddyBoy &7▶ &x&f&b&c&b&4&f1.13+ MOTD, Gradient, & more!"
+    - "&7▶ %timer% &fis in &a%remaining%"
+  legacy-lines: # limited to 2 lines 1.13 below (Doesn't use gradients)
+    - "&4&lLBuddyBoy &7▶ &e1.13 below, MOTD, & more!"
+    - "&7▶ %timer% &fis in &a%remaining%"
+
+motds: # cycles through random motds when people refresh
+  '1':
+    new-lines: # limited to 2 lines 1.13 and up (Uses gradients)
+      - "&x&f&b&9&4&4&aLBuddyBoy &7▶ &x&f&b&c&b&4&f1.13+ MOTD, Gradient, & more!"
+      - "&7▶ &x&f&b&9&4&4&aJoin our discord &7discord.lbuddyboy.dev"
+    legacy-lines: # limited to 2 lines 1.13 below (Doesn't use gradients)
+      - "&4&lLBuddyBoy &7▶ &e1.13 below, MOTD, & more!"
+      - "&7▶ &cJoin our discord &7discord.lbuddyboy.dev"

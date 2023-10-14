@@ -1,0 +1,22 @@
+
+redis:
+  enabled: false
+  host: "localhost"
+  port: 6379
+  auth:
+    enabled: false
+    password: ""
+  channel-id: 0
+
+mongo:
+  enabled: false
+  use-uri: false
+  uri: ""
+  host: "localhost" # dont use this if you have the uri
+  port: 27017 # dont use this if you have the uri
+  database: "lCore" # use this to determine the db name
+  auth: # dont use this if you have the uri
+    enabled: false # dont use this if you have the uri
+    username: "" # dont use this if you have the uri
+    password: "" # dont use this if you have the uri
+    auth-db: "" # dont use this if you have the uri

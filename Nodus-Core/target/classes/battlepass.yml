@@ -1,0 +1,114 @@
+tiers:
+  1: # must be a number
+    required-xp: 15
+    rewards: # premium:displayText:command
+      - 'true:&gx3 Steel Key:goldencrates givekey {playerName} Steel 3'
+      - 'false:&gx2 Steel Key:goldencrates givekey {playerName} Steel 2'
+  2:
+    required-xp: 20
+    rewards:
+      - 'true:&e&lx3 Ability Packages:ppnomultiplier {playerName} 3'
+      - 'false:&e&lx1 Ability Package:ppnomultiplier {playerName} 1'
+  3:
+    required-xp: 25
+    rewards:
+      - 'true:&b&lx2 Winter Keys:goldencrates givekey {playerName} Winter 2'
+      - 'false:&c&lx3 Lives:pvp addlives {playerName} 3'
+  4:
+    required-xp: 30
+    rewards:
+      - 'true:&d&lx3 God Apples:give {playerName} enchanted_golden_apple 3'
+      - 'false:&e&lx16 Golden Apples:give {playerName} golden_apple 16'
+  5:
+    required-xp: 35
+    rewards:
+      - 'true:&d&lx3 God Apples:give {playerName} enchanted_golden_apple 3'
+      - 'false:&e&lx16 Golden Apples:give {playerName} golden_apple 16'
+  6:
+    required-xp: 50
+    rewards:
+      - 'true:&g&lx2 Portable Bard:pp give {playerName} portable_bard 2'
+      - 'false:&6&lx15 Shards:shards add {playerName} 15'
+  7:
+    required-xp: 70
+    rewards:
+      - 'true:&d&lx5 Ability Packages:pp {playerName} 5'
+      - 'false:&6&lSpeed II Book:givegem {playerName} 2 Speed'
+  8:
+    required-xp: 90
+    rewards:
+      - 'true:&8&lx2 Class Keys:goldencrates givekey {playerName} Class 2'
+      - 'false:&2&lx3 Spring Keys:goldencrates givekey {playerName} Winter 3'
+  9:
+    required-xp: 120
+    rewards:
+      - 'true:&2&lx3 Spring Keys:goldencrates givekey {playerName} Winter 3'
+      - 'false:&c&lx8 Lives:pvp addlives {playerName} 8'
+  10:
+    required-xp: 150
+    rewards:
+      - 'true:&d&lx4 God Apples:give {playerName} enchanted_golden_apple 4'
+      - 'false:&e&lx32 Golden Apples:give {playerName} golden_apple 32'
+  11:
+    required-xp: 160
+    rewards:
+      - 'true:&gx3 Steel Keys:goldencrates givekey {playerName} Steel 3'
+      - 'false:&d&lx10 Ability Packages:pp {playerName} 10'
+  12:
+    required-xp: 190
+    rewards:
+      - 'true:&g&lx16 Switchers:pp give {playerName} switcher 16'
+      - 'false:&6&lx45 Shards:shards add {playerName} 45'
+  13:
+    required-xp: 220
+    rewards:
+      - 'true:&6&lSpeed II Book:givegem {playerName} 2 Speed'
+      - 'false:&6&lFire Resistance I Book:givegem {playerName} 1 Inferno'
+  14:
+    required-xp: 250
+    rewards:
+      - 'true:&6&lRecover I Book:givegem {playerName} 2 Speed'
+      - 'false:&6&lRepair I Book:givegem {playerName} 1 Inferno'
+  15:
+    required-xp: 270
+    rewards:
+      - 'true:&g&lx3 Pack a Punches:pp give {playerName} pack_a_punch 3'
+      - 'false:&g&lx16 Switchers:pp give {playerName} switcher 16'
+  16:
+    required-xp: 280
+    rewards:
+      - 'true:&5Hunter Armor Crate:hctcrate give Hunter {playerName}'
+      - 'false:&fMiner Armor Crate:hctcrate give Miner {playerName}'
+  17:
+    required-xp: 300
+    rewards:
+      - 'true:&c&lBloody Arrow Trail &7(/cosmetics):proc give cosmetic {playerName} arrow-effects bloody-arrows'
+      - 'false:&eBard Armor Crate:hctcrate give Bard {playerName}'
+  18:
+    required-xp: 315
+    rewards:
+      - 'true:&c&lBloody Kill Effect &7(/cosmetics):proc give cosmetic {playerName} death-effects bloody-death'
+      - 'false:&bDiamond Armor Crate:hctcrate give Diamond {playerName}'
+  19:
+    required-xp: 330
+    rewards:
+      - 'true:&6&lSun Balloon &7(/cosmetics):proc give cosmetic {playerName} balloons sun'
+      - 'false:&dEnchanter Items Crate:hctcrate give Enchanter {playerName}'
+  20:
+    required-xp: 350
+    rewards:
+      - 'true:&3&lx2 Airdrop:airdrops give {playerName} 2'
+      - 'false:&3&lx1 Airdrop:airdrops give {playerName} 1'
+
+challenges:
+  mine-50-diamonds: # id
+    type: "MINE_BLOCK:DIAMOND_ORE" #
+    display: "Mine 50 Diamonds"
+    reward: 5 # xp
+    daily: false # is it a daily challenge
+
+# Challenge Types:
+# ATTEMPT_CAPTURE, VALUABLES_SOLD, TAG_ARCHERS,
+# MAKE_TEAMS_RAIDABLE, USE_ABILITY_ITEM, ACHIEVE_PLAYTIME
+# VISIT_NETHER, VISIT_END, VISIT_ACTIVE_KOTH, VISIT_GLOWSTONE_MOUNTAIN
+# MINE_BLOCK:MATERIAL, MINE_LOGS, KILL_ENTITY:ENTITYNAME

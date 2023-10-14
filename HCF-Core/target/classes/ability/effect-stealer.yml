@@ -1,0 +1,12 @@
+display-name: "&6&lEffect Stealer"
+lore:
+  - "&7Right click to receive 15 seconds"
+  - "&7of the enemy's potion effects who"
+  - "&7hit you in the past 10 seconds."
+  - " "
+  - "&aStrength 2 is guaranteed for 5 seconds!"
+material: "ORANGE_CANDLE"
+default-amount: 3
+cooldown-seconds: 80
+exclusive: false
+consumable: true

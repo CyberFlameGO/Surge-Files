@@ -1,0 +1,111 @@
+enchants:
+  speed:
+    displayName: "Speed"
+    maxLevel: 2
+    minLevel: 1
+    rarities: # COMMON, RARE, LEGENDARY
+      - 'LEGENDARY'
+    description: "Gives you a permanent speed effect."
+    allowedArmor: # BOOTS, HELMET, LEGGINGS, CHESTPLATE, SPADE, PICKAXE, AXE
+      - 'BOOTS'
+  replenish:
+    displayName: "Replenish"
+    maxLevel: 5
+    minLevel: 1
+    rarities:
+      - 'COMMON'
+      - 'RARE'
+    description: "Gives you a permanent saturation effect."
+    allowedArmor:
+      - 'HELMET'
+  aquatic:
+    displayName: "Aquatic"
+    maxLevel: 3
+    minLevel: 1
+    rarities:
+      - 'COMMON'
+    description: "Gives you a permanent water breathing effect."
+    allowedArmor:
+      - 'HELMET'
+  inferno:
+    displayName: "Inferno"
+    maxLevel: 2
+    minLevel: 1
+    rarities:
+      - 'LEGENDARY'
+    description: "Gives you a permanent fire resistance effect."
+    allowedArmor:
+      - 'HELMET'
+      - 'CHESTPLATE'
+      - 'LEGGINGS'
+      - 'BOOTS'
+  repair:
+    displayName: "Repair"
+    maxLevel: 1
+    minLevel: 1
+    rarities:
+      - 'LEGENDARY'
+    description: "Repairs your gear as you walk around."
+    allowedArmor:
+      - 'HELMET'
+      - 'CHESTPLATE'
+      - 'LEGGINGS'
+      - 'BOOTS'
+  recover:
+    displayName: "Recover"
+    maxLevel: 2
+    minLevel: 1
+    rarities:
+      - 'LEGENDARY'
+    description: "Gives you absorption hearts off getting a kill."
+    allowedArmor:
+      - 'LEGGINGS'
+  invisibility:
+    displayName: "Invis"
+    maxLevel: 1
+    minLevel: 1
+    rarities:
+      - 'RARE'
+    description: "Gives you a permanent invis effect."
+    allowedArmor:
+      - 'HELMET'
+  blast:
+    displayName: "Blast"
+    maxLevel: 3
+    minLevel: 1
+    rarities:
+      - 'LEGENDARY'
+    description: "Break a block to break a large area of blocks depending on the level."
+    allowedArmor:
+      - 'PICKAXE'
+      - 'SPADE'
+  autosmelt:
+    displayName: "Auto-Smelt"
+    maxLevel: 3
+    minLevel: 1
+    rarities:
+      - 'RARE'
+    description: "Automatically smelts any smeltable block you break."
+    allowedArmor:
+      - 'PICKAXE'
+      - 'SPADE'
+  trimmer:
+    displayName: "Trimmer"
+    maxLevel: 3
+    minLevel: 1
+    rarities:
+      - 'COMMON'
+      - 'RARE'
+    description: "Break a leaf block to break a large area of blocks depending on the level."
+    allowedArmor:
+      - 'AXE'
+  lumber:
+    displayName: "Lumber"
+    maxLevel: 3
+    minLevel: 1
+    rarities:
+      - 'COMMON'
+      - 'RARE'
+    description: "Break a wood block to break a large area of blocks depending on the level."
+    allowedArmor:
+      - 'AXE'

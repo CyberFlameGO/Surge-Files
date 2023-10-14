@@ -1,0 +1,71 @@
+title:
+  frames:
+    - '&5&lTRIBES'
+    - '&5&lTRIBES'
+    - '&d&lT&5&lRIBES'
+    - '&d&lTR&5&lIBES'
+    - '&d&lTRI&5&lBES'
+    - '&d&lTRIB&5&lES'
+    - '&d&lTRIB&5&lES'
+    - '&d&lTRIBE&5&lS'
+    - '&d&lTRIBES'
+    - '&d&lTRIBES'
+    - '&5&lTRIBES'
+    - '&5&lTRIBES'
+    - '&d&lTRIBES'
+    - '&d&lTRIBES'
+  delay: 5
+lines:
+  '10':
+    frames:
+      - '&f     %date%'
+    delay: -1
+  '15':
+    frames:
+      - '&7&m--------------------'
+  '20':
+    frames:
+      - '&7» &5&l%focused-name% Info'
+    delay: -1
+  '30':
+    frames:
+      - '&7» &fDTR&7: &r%focused-dtr%'
+    delay: -1
+  '35':
+    frames:
+      - '&7» &fOnline&7: &r%focused-online%/%focused-size%'
+    delay: -1
+  '40':
+    frames:
+      - '&7» &fHQ&7: &r%focused-hq%'
+    delay: -1
+  '60':
+    frames:
+      - '&7&m--------------------'
+  '65':
+    frames:
+      - '&6&lVault Event'
+    delay: -1
+  '70':
+    frames:
+      - '&7» &fStage: &c%vault-stage%'
+    delay: -1
+  '75':
+    frames:
+      - '&7» &fTime Left: &c%vault-time-left%'
+    delay: -1
+  '80':
+    frames:
+      - '%vault-progress%'
+    delay: -1
+  '85':
+    frames:
+      - '&7» &fCapturing: &e%vault-capturing%'
+    delay: -1
+  '90':
+    frames:
+      - '&7» &fLocation: &e%vault-location% &7(%vault-world%)'
+    delay: -1
+  '95':
+    frames:
+      - '&7&m--------------------'

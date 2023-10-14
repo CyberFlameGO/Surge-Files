@@ -1,0 +1,11 @@
+mongo:
+  enabled: true
+  use-uri: true
+  host: localhost
+  port: 27071
+  database: Bunkers
+  auth:
+    enabled: false
+    username:
+    password:
+server-name: "Bunkers-01"

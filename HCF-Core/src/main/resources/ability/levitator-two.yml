@@ -1,0 +1,9 @@
+display-name: "&6&lLevitator 2.0"
+lore:
+  - "&7Right click and every hit for 10 seconds will have a 50% chance to levitate them!"
+material: "PHANTOM_MEMBRANE"
+default-amount: 3
+cooldown-seconds: 120
+exclusive: false
+consumable: true
+procTime: 10

@@ -1,0 +1,44 @@
+key:
+  name: '&f&k|&6&l Vault Key &f&k|&r'
+  material: GOLD_INGOT
+  lore:
+    - '&f'
+    - '&fRight click this on the daylight sensor at the Vault Post!'
+    - '&fto receive a random team booster!'
+    - '&f'
+loot:
+  - 'GOLDEN_HELMET 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&e&l_Bard_Helmet'
+  - 'GOLDEN_CHESTPLATE 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&e&l_Bard_Chestplate'
+  - 'GOLDEN_LEGGINGS 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&e&l_Bard_Leggings'
+  - 'GOLDEN_BOOTS 1 PROTECTION_FALL:4 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal
+  item-flags: name:&f&k|&6&l_Vault_&f&k|&e&l_Bard_Boots'
+  - 'BOW 1 ARROW_INFINITE:1 ARROW_DAMAGE:5 DURABILITY:3 meta-type:Normal item-flags:'
+  - 'CHAINMAIL_HELMET 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&c&l_Rogue_Helmet'
+  - 'CHAINMAIL_CHESTPLATE 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal
+  item-flags: name:&f&k|&6&l_Vault_&f&k|&c&l_Rogue_Chestplate'
+  - 'CHAINMAIL_LEGGINGS 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&c&l_Rogue_Leggings'
+  - 'CHAINMAIL_BOOTS 1 PROTECTION_FALL:4 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal
+  item-flags: name:&f&k|&6&l_Vault_&f&k|&c&l_Rogue_Boots'
+  - 'LEATHER_HELMET 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&a&l_Archer_Helmet rgb:160|101|64'
+  - 'LEATHER_CHESTPLATE 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&a&l_Archer_Chestplate rgb:160|101|64'
+  - 'LEATHER_LEGGINGS 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&a&l_Archer_Leggings rgb:160|101|64'
+  - 'LEATHER_BOOTS 1 PROTECTION_FALL:4 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal
+  item-flags: name:&f&k|&6&l_Vault_&f&k|&a&l_Archer_Boots rgb:160|101|64'
+  - 'CROSSBOW 1 ARROW_INFINITE:1 PIERCING:4 ARROW_DAMAGE:4 QUICK_CHARGE:3 meta-type:Normal
+  item-flags:'
+  - 'GOLDEN_HELMET 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&5&l_Mage_Helmet'
+  - 'CHAINMAIL_CHESTPLATE 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&5&l_Mage_Chestplate rgb:160|101|64'
+  - 'CHAINMAIL_LEGGINGS 1 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal item-flags:
+  name:&f&k|&6&l_Vault_&f&k|&5&l_Mage_Leggings rgb:160|101|64'
+  - 'GOLDEN_BOOTS 1 PROTECTION_FALL:4 PROTECTION_ENVIRONMENTAL:3 DURABILITY:3 meta-type:Normal
+  item-flags: name:&f&k|&6&l_Vault_&f&k|&5&l_Mage_Boots rgb:160|101|64'

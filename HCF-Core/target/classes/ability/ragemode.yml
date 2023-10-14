@@ -1,0 +1,12 @@
+display-name: "&6&lRage Mode"
+lore:
+  - "&7Right click and every time you are hit"
+  - "&7for 10 seconds will be a second of strength 2!"
+  - " "
+  - "&7&oThe strength 2 seconds are limited at a max of 10 seconds"
+material: "FIREWORK_STAR"
+default-amount: 3
+cooldown-seconds: 120
+exclusive: false
+consumable: true
+procTime: 10

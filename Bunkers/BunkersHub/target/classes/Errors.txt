@@ -1,0 +1,3 @@
+All lHub Error codes!
+
+Error #2056 - Incorrect Menu Syntax. Most likely an invalid menu or a typo with actions.

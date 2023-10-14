@@ -1,0 +1,9 @@
+display-name: "&6&lGoat Horn"
+lore:
+  - "&7Blow this horn to summon goats"
+  - "&7that give you bard effects!"
+material: "GOAT_HORN"
+default-amount: 1
+cooldown-seconds: 90
+exclusive: false
+consumable: true

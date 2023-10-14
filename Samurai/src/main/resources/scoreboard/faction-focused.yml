@@ -1,0 +1,59 @@
+title:
+  frames:
+    - '&d&lAuraPvP &7| &eHCF'
+  delay: -1 # no delay stays the same all the time & this is in ticks 20 ticks = 1 second
+
+lines:
+  10:
+    frames:
+      - '&f  %date%'
+    delay: -1
+  20:
+    frames:
+      - ' '
+    delay: -1
+  30:
+    frames:
+      - '&8┌─ &d&l%player%'
+    delay: -1
+  40:
+    frames:
+      - '&8│ &fBalance: &7$%balance%'
+    delay: -1
+  50:
+    frames:
+      - '&8│ &fCoins: &7⛁%coins%'
+    delay: -1
+  60:
+    frames:
+      - '&8│ &fOnline: &7%online%'
+    delay: -1
+  70:
+    frames:
+      - '&8┌─ &d&l%faction-name%'
+    delay: -1
+  80:
+    frames:
+      - '&8│ &fPlace: &7#%faction-place%'
+      - '&8│ &fPoints: &7%faction-points%'
+      - '&8│ &fBalance: &7$%faction-balance%'
+    delay: 100
+  90:
+    frames:
+      - '&8│ &fOnline: &7%faction-online%/%faction-size%'
+    delay: -1
+  100:
+    frames:
+      - '&8┌─ &d&lFocused'
+    delay: -1
+  110:
+    frames:
+      - '&8│ &fDTR: &7#%focused-dtr%'
+      - '&8│ &fHome: &7%focused-home%'
+      - '&8│ &fOnline: &7%focused-online%/%faction-size%'
+    delay: 100
+  120:
+    frames:
+      - '&8└─ &daurapvp.com/staff'
+      - '&8└─ &daurapvp.com/media'
+    delay: 20

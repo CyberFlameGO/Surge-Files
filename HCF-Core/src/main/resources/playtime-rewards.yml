@@ -1,0 +1,15 @@
+menu:
+  title: "&bPlaytime Rewards"
+rewards:
+  DiamondGkit:
+    playtime-needed: "2h"
+    material: "DIAMOND_CHESTPLATE"
+    data: 0
+    name: "&7(TEMPORARY) &b&lDiamond GKit"
+    lore:
+      - '&7Click to purchase the diamond gkit for 3 days.'
+      - ''
+      - '&7Do /gkit to view all the contents of this gkit.'
+      - ''
+    commands:
+      - 'user addtimedperm %player% HCF gkitz.Diamond'

@@ -1,0 +1,49 @@
+title:
+  frames:
+    - '&d&lAuraPvP &7| &eHCF'
+  delay: -1 # no delay stays the same all the time & this is in ticks 20 ticks = 1 second
+
+lines:
+  10:
+    frames:
+      - '&f  %date%'
+    delay: -1
+  20:
+    frames:
+      - ' '
+    delay: -1
+  30:
+    frames:
+      - '&8┌─ &d&l%player%'
+    delay: -1
+  40:
+    frames:
+      - '&8│ &fBalance: &7$%balance%'
+    delay: -1
+  50:
+    frames:
+      - '&8│ &fCoins: &7⛁%coins%'
+    delay: -1
+  60:
+    frames:
+      - '&8│ &fOnline: &7%online%'
+    delay: -1
+  70:
+    frames:
+      - '&8┌─ &d&lFaction'
+    delay: -1
+  80:
+    frames:
+      - '&8│ &fCreate a faction'
+    delay: -1
+  90:
+    frames:
+      - '&8│ &fusing: &a/f create'
+    delay: -1
+  100:
+    frames:
+      - '&8└─ &daurapvp.com/discord'
+      - '&8└─ &daurapvp.com/staff'
+      - '&8└─ &daurapvp.com/media'
+      - '&8└─ &dplay.aurapvp.com'
+    delay: 20

@@ -1,0 +1,6 @@
+name: Bunkers
+version: 1.0
+author: LBuddyBoy
+main: dev.lbuddyboy.bunkers.Bunkers
+api-version: 1.13
+depend: [ LunarClient-API]

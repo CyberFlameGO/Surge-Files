@@ -1,0 +1,14 @@
+rank-core: "none" # lcore, flash, aquacore, vault, none
+queue: "custom" # ezqueue, portal
+
+join-message:
+  enabled: true
+  message:
+    - '&7&m--------------------'
+    - ''
+    - ' &f- &6&lTWITTER &7twitter.com/LBuddyBoyDev'
+    - ' &f- &6&lTEAMSPEAK &7ts.lbuddyboy.me'
+    - ' &f- &6&lDISCORD &7discord.lbuddyboy.me'
+    - ' &f- &6&lWEBSITE &7lbuddyboy.me'
+    - ''
+    - '&7&m--------------------'

@@ -1,0 +1,26 @@
+spawn:
+  world: "world"
+  x: 0.5
+  y: 100
+  z: 0.5
+  yaw: 90
+  pitch: 90
+
+double-jump:
+  enabled: true
+  multiplier: 1.2
+  sound: "EXPLODE"
+
+ender-butt:
+  ride: true
+  multiplier: 1.2
+  sound: "EXPLODE"
+
+anti-void:
+  enabled: true
+  level: 50
+
+server-status:
+  online: "&a&lONLINE"
+  offline: "&c&lOFFLINE"
+  whitelisted: "&e&lWHITELISTED"

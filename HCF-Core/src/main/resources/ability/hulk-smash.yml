@@ -1,0 +1,10 @@
+display-name: "&6&lHulk Smash"
+lore:
+  - "&7Throw yourself in the air 3 times every 5 seconds"
+  - "&7and each critical hit will multiply damage by 2.50x!"
+material: "SCUTE"
+default-amount: 3
+cooldown-seconds: 150
+exclusive: true
+consumable: false
+multiplier: 2.50

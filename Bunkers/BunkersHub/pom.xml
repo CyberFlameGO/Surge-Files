@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>Bunkers</artifactId>
+        <groupId>dev.lbuddyboy</groupId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>BunkersHub</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>viaversion-repo</id>
+            <url>https://repo.viaversion.com</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.19.4-R0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.viaversion</groupId>
+            <artifactId>viaversion-api</artifactId>
+            <version>LATEST</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+        <dependency>
+            <groupId>co.aikar</groupId>
+            <artifactId>acf-paper</artifactId>
+            <version>0.5.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>PlaceholderAPI</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/PlaceholderAPI-2.10.10-DEV-108.jar</systemPath>
+        </dependency>
+
+        <!--
+        Queue
+        -->
+
+        <dependency>
+            <groupId>me.signatured</groupId>
+            <artifactId>EzQueue</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/queue/EzQueueSpigot.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>me.joeloi</groupId>
+            <artifactId>Portal</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/queue/portal-bukkit.jar</systemPath>
+        </dependency>
+
+        <!--
+        Rank Cores
+        -->
+
+        <dependency>
+            <groupId>net.milkbowl</groupId>
+            <artifactId>Vault</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/rank/Vault.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>me.quartz.hestia</groupId>
+            <artifactId>HestiaAPI</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/rank/HestiaAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>dev.brou</groupId>
+            <artifactId>MizuAPI</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/rank/MizuAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>me.activad</groupId>
+            <artifactId>AquaCoreAPI</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/rank/AquaCoreAPI.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>me.lbuddyboy</groupId>
+            <artifactId>lCore</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/rank/lCore-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>dev.lbuddyboy</groupId>
+            <artifactId>lSpoof</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.lbuddyboy.lqueue</groupId>
+            <artifactId>lQueue-API</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.lbuddyboy</groupId>
+            <artifactId>Flash</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/rank/Flash-Bukkit-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.steelpvp</groupId>
+            <artifactId>BunkersCommunicator</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/BunkersCommunicator-1.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <artifactSet>
+                                <includes>
+                                    <include>co.aikar:acf-paper</include>
+                                </includes>
+                            </artifactSet>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

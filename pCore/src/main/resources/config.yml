@@ -1,0 +1,12 @@
+storage-type: "MONGO" # MONGO, FLAT_FILE, and REDIS
+
+# Only use this if you're using MONGO as a storage type
+mongo:
+  host: "localhost"
+  port: 27017
+  database: "pCore" # use this to determine the db name
+  auth:
+    enabled: false
+    username: ""
+    password: ""
+    auth-db: ""

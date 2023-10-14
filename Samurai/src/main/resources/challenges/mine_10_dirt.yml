@@ -1,0 +1,16 @@
+display-name: Mine 10 Dirt Blocks
+category: week-1
+challenge-type: MINE_BLOCK
+value: DIRT
+xp: 20
+neededProgress: 10
+display-item:
+  material: DIRT
+  name: §6§lMine 10 Dirt Blocks
+  lore:
+  - '§eXP Reward§7: §f%xp%'
+  - '§7- §eCurrent Progress§7: §f%progress%'
+  item-flags:
+  - HIDE_ENCHANTS
+  data: 0
+  amount: 10

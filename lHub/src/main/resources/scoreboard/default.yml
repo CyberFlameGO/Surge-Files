@@ -1,0 +1,49 @@
+title:
+  frames:
+  - '&6&lHUB'
+  - '&e&lH&6&lUB'
+  - '&e&lHU&6&lB'
+  - '&e&lHUB'
+  - '&6&lHUB'
+  - '&7&lHUB'
+  delay: 5
+lines:
+  '10':
+    frames:
+    - '&f     %date%'
+    delay: -1
+  '20':
+    frames:
+    - '&7&m--------------------'
+    delay: -1
+  '25':
+    frames:
+    - '&6&lOnline&7: &f%bungee_total%'
+    delay: -1
+  '30':
+    frames:
+      - ' '
+    delay: -1
+  '35':
+    frames:
+    - '&6&l%player_name%'
+    delay: -1
+  '40':
+    frames:
+      - '&fRank&7: &r%rank_color%%rank_display%'
+      - '&fCoins&7: &6⛁%player_coins%'
+    delay: 60
+  '45':
+    frames:
+      - ' '
+    delay: -1
+  '50':
+    frames:
+      - '&7&olbuddyboy.dev'
+      - '&7&ostore.lbuddyboy.dev'
+      - '&7&odiscord.lbuddyboy.dev'
+    delay: 60
+  '100':
+    frames:
+    - '&7&m--------------------'
+    delay: -1

@@ -1,0 +1,6 @@
+name: lQueue
+version: '1.0'
+main: dev.lbuddyboy.lqueue.lQueue
+authors: [ LBuddyBoy ]
+depend:
+  - lLibs

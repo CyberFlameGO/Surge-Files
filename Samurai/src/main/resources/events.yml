@@ -1,0 +1,21 @@
+koth:
+  started: '&6&l[KOTH] &a%koth% KoTH &fis now &2active&f! &eAccess this with /warp PvP!'
+  ended: '&6&l[KOTH] &a%koth% KoTH &fhas &cended&f!'
+  knocked: '&6&l[KOTH] &a%koth% KoTH &fhas been &cknocked&f!'
+  captured: '&6&l[KOTH] &a%koth% KoTH &fhas been &ecaptured &fby &a%player%&f!'
+  reminder: '&6&l[KOTH] &a%koth% KoTH &fis currently &2active&f! &7(%center-x%,
+    %center-z%)'
+  capturing:
+    remind-message: '&6&l[KOTH] &a%koth% KoTH &fis actively being captured
+      by &a%player%&f!'
+    remind-times:
+      - 240
+      - 180
+      - 120
+      - 60
+      - 30
+      - 15
+  hologram-format:
+    - '&a&l%koth% KoTH'
+    - '&bCapturing&7: &f%player%'
+    - '&bTime Left&7: &f%time-left%'

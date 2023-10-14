@@ -1,0 +1,104 @@
+categories:
+  daily:
+    display-name: "Daily"
+    active: true
+    display-item:
+      material: WATCH
+      name: '&6&lDaily Challenges'
+      lore:
+        - '&eCompleted&7: &f%daily-progress%/%daily-challenges%'
+        - '&ePossible XP&7: &f%daily-possible-xp%'
+        - ''
+        - '&7Click to view the Daily challenges!'
+      item-flags: [ ]
+      data: 0
+      amount: 1
+  week-1:
+    display-name: "Week 1"
+    active: true
+    display-item:
+      material: BOOK_AND_QUILL
+      name: '&6&lWeek 1'
+      lore:
+        - '&eCompleted&7: &f%week-1-progress%/%week-1-challenges%'
+        - '&ePossible XP&7: &f%week-1-possible-xp%'
+        - ''
+        - '&7Click to view the Week 1 challenges!'
+      item-flags: [ ]
+      data: 0
+      amount: 1
+  week-2:
+    display-name: "Week 2"
+    active: false
+    display-item:
+      material: BOOK_AND_QUILL
+      name: '&6&lWeek 2'
+      lore:
+        - '&eCompleted&7: &f%week-2-progress%/%week-2-challenges%'
+        - '&ePossible XP&7: &f%week-2-possible-xp%'
+        - ''
+        - '&7Click to view the Week 2 challenges!'
+      item-flags: [ ]
+      data: 0
+      amount: 2
+
+main-menu:
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore: []
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        durability: 10
+      data: 0
+      amount: 1
+  size: 27
+  title: "Battle Pass"
+
+  buttons:
+    progress:
+      display-item:
+        slot: 14
+        material: ICE
+        name: '&3&lProgress'
+        lore:
+          - '&7&m----------------'
+          - '&bExperience&7: %experience%'
+          - '&bCurrent Tier&7: %tier%'
+          - '&bPass Type&7: %pass-type%'
+          - '&7&m----------------'
+        item-flags:
+          - HIDE_ENCHANTS
+        enchants:
+          durability: 10
+        data: 0
+        amount: 1
+    challenges:
+      display-item:
+        slot: 16
+        material: REDSTONE
+        name: '&4&lChallenges'
+        lore:
+          - '&7Click to view all of the challenges!'
+        item-flags:
+          - HIDE_ENCHANTS
+        enchants:
+          durability: 10
+        data: 0
+        amount: 1
+    tiers:
+      display-item:
+        slot: 12
+        material: GOLD_NUGGET
+        name: '&6&lTiers'
+        lore:
+          - '&7Click to view all of the battle pass tiers!'
+        item-flags:
+          - HIDE_ENCHANTS
+        enchants:
+          durability: 10
+        data: 0
+        amount: 1

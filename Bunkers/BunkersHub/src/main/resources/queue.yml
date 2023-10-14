@@ -1,0 +1,9 @@
+settings:
+  queue-leave-delay: 30 # seconds
+  queue-send-delay: 3 # seconds
+queues:
+  dev:
+    name: "Dev"
+    ip: "localhost"
+    port: 25567
+    paused: false

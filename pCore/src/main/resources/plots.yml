@@ -1,0 +1,12 @@
+grid:
+  world: private_plots
+  last_x: 1000
+  spacing: 1000
+private-mine-settings:
+  schematic-name: private-mine
+  spawn-location:
+    x: 0.0
+    y: 100.0
+    z: 0.0
+    pitch: 0.0
+    yaw: 90.0

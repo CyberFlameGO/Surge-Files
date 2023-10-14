@@ -1,0 +1,30 @@
+display-name: '&b&lScout Pet'
+rarity: uncommon
+lore:
+- ' '
+- '&a&lHAVE IN INVENTORY'
+- '&7Receive speed depending on'
+- '&7the level of your pet!'
+- ' '
+- '&e&lLevel: &7%level%'
+- '&e&lXP: &7%experience%/%needed-experience%'
+- ' '
+menu-lore:
+- ' '
+- '&a&lHAVE IN INVENTORY'
+- '&7Receive speed depending on'
+- '&7the level of your pet!'
+- ' '
+- '&a&lLEVEL VARIATIONS'
+- '&71-25 (Speed 1)'
+- '&726-50 (Speed 2)'
+- '&751-75 (Speed 3)'
+- '&776-100 (Speed 4)'
+- ' '
+texture: 9c33165a15851045f55ec9dc7f6332be67721c76a6c4304b988540d517fb6b
+max-level: 100
+level-variations:
+- 1-25;1
+- 26-50;2
+- 51-75;3
+- 76-100;4

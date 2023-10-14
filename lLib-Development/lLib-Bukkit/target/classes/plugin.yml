@@ -1,0 +1,4 @@
+name: lLibs
+version: '1.0'
+main: dev.lbuddyboy.libs.lLib
+authors: [ LBuddyBoy ]

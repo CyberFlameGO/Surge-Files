@@ -1,0 +1,8 @@
+name: JailCorder
+version: '${project.version}'
+main: dev.lbuddyboy.jailcorder.JailCorder
+api-version: '1.19'
+authors: [LBuddyBoy]
+depend:
+  - AdvancedReplay
+  - Flash

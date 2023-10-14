@@ -1,0 +1,35 @@
+display-name: "&5&lWizard Pet"
+rarity: "legendary"
+lore:
+  - ' '
+  - '&a&lRIGHT CLICK'
+  - '&7Click to receive a random amount'
+  - '&7of splash potions of healing 2!'
+  - ' '
+  - '&e&lLevel: &7%level%'
+  - '&e&lXP: &7%experience%/%needed-experience%'
+  - ' '
+menu-lore:
+  - ' '
+  - '&a&lRIGHT CLICK'
+  - '&7Click to receive a random amount'
+  - '&7of splash potions of healing 2!'
+  - ' '
+  - '&a&lLEVEL VARIATIONS'
+  - '&71-25 (2-4 pots) [60s]'
+  - '&726-50 (4-6 pots) [120s]'
+  - '&751-75 (6-8 pots) [180s]'
+  - '&776-100 (8-10 pots) [240s]'
+  - ' '
+texture: "282c2bf9d82f40d711eff5ad2d520baba3e7b4eab5101bfc4d0d86709fd0ea39"
+max-level: 100
+cooldown-times: # levels;seconds
+  - '1-25;60'
+  - '26-50;120'
+  - '51-75;180'
+  - '76-100;240'
+level-variations: # levels;number of potions
+  - '1-25;2-4'
+  - '26-50;4-6'
+  - '51-75;6-8'
+  - '76-100;8-10'

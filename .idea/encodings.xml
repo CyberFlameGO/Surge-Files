@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Flash/Flash-API/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/Flash-API/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/Flash-Bukkit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/Flash-Bukkit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/Flash-Bungee/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/Flash-Bungee/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Flash/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lCrates/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lCrates/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lGKits/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lGKits/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lKitPvP/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lKitPvP/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lLib-Development/lLib-API/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lLib-Development/lLib-API/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lLib-Development/lLib-Bukkit/lLib-Bukkit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lLib-Development/lLib-Bukkit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lLib-Development/lLib-Bukkit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lMOTD-Development/lMOTD-Velocity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lMOTD-Development/lMOTD-Velocity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/lQueue-API/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/lQueue-API/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/lQueue-Bukkit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/lQueue-Bukkit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/lQueue-Distributed/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/lQueue-Distributed/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lQueue-Development/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lSpoof-Velocity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lSpoof-Velocity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lStaff/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lStaff/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lSyncBot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lSyncBot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lVouchers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lVouchers/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

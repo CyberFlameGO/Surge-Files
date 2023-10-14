@@ -1,0 +1,94 @@
+settings:
+  pet-eggs:
+    walk:
+      item-format:
+        material: "MONSTER_EGG"
+        name: '%rarity-color%&l%rarity-display% Pet Egg'
+        lore:
+          - '&7Your egg will hatch in %rarity-color%%blocks-walked% more blocks walked!'
+        item-flags:
+          - "HIDE_ENCHANTS"
+        enchants:
+          durability: 10
+        data: 0
+        amount: 1
+    afk:
+      item-format:
+        material: "MONSTER_EGG"
+        name: '%color%&l%rarity-display% Pet Egg'
+        lore:
+          - '&7Your egg will hatch in %rarity-color%%egg-duration%'
+        item-flags:
+          - "HIDE_ENCHANTS"
+        enchants:
+          durability: 10
+        data: 0
+        amount: 1
+    right-click:
+      item-format:
+        material: "MONSTER_EGG"
+        name: '%color%&l%rarity-display% Pet Egg'
+        lore:
+          - '&7Your egg will hatch in %rarity-color%%egg-duration%'
+        item-flags:
+          - "HIDE_ENCHANTS"
+        enchants:
+          durability: 10
+        data: 0
+        amount: 1
+
+menu-settings:
+  title: "Pet Rarities"
+  size: 27
+  auto-fill:
+    enabled: false
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 3
+      amount: 1
+  button-format:
+    name: "%rarity-color%%rarity-display%"
+    material: "STAINED_GLASS_PANE"
+    data: -1 # -1 will default the pane to the rarities display color
+    lore:
+      - '&8&m--------------------------'
+      - '&7Click to view the %rarity-color%%rarity-display%&7 pets!'
+      - '&8&m--------------------------'
+
+pet-menu-settings:
+  title: "%rarity-display% Pets"
+  size: 18
+  auto-fill:
+    enabled: true
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 3
+      amount: 1
+  page:
+    previous-slot: 10
+    next-slot: 18
+    button-slots: "1,2,3,4,5,6,7,8,9"
+  back-button:
+    enabled: true
+    slot: 14
+
+rarities:
+  legendary:
+    display-name: "&6&lLegendary Pet"
+    color: "&6"
+    default-walk: 1000
+    menu-slot: 1

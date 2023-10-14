@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1500" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lQueue (1)" />
+        <module name="lStaff" />
+        <module name="lSpoof" />
+        <module name="Flash-Bukkit" />
+        <module name="lGKits" />
+        <module name="lQueue-Bukkit" />
+        <module name="lQueue-Distributed" />
+        <module name="lLib-Bukkit" />
+        <module name="lSyncBot" />
+        <module name="lHub" />
+        <module name="lMOTD-Velocity" />
+        <module name="Flash-Bungee" />
+        <module name="lQueue-API" />
+      </profile>
+      <profile name="Annotation profile for lCrates" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="lCrates" />
+      </profile>
+      <profile name="Annotation profile for lVouchers" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="lVouchers" />
+      </profile>
+      <profile name="Annotation profile for LBuddyBoy-Development" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="lSpoof-Velocity" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AuraKnockback" target="1.5" />
+      <module name="BuddyLibs" target="1.8" />
+      <module name="Flash" target="1.8" />
+      <module name="Flash (1)" target="1.8" />
+      <module name="Flash (1) (dev.lbuddyboy)" target="1.8" />
+      <module name="Flash (2)" target="1.8" />
+      <module name="Flash (2) (dev.lbuddyboy.flash)" target="1.5" />
+      <module name="Flash-API" target="1.8" />
+      <module name="Flash-Bukkit (1)" target="1.8" />
+      <module name="KitPvP" target="1.8" />
+      <module name="Knockback" target="1.5" />
+      <module name="lAvatar" target="8" />
+      <module name="lAvatar (1)" target="8" />
+      <module name="lAvatar (2)" target="8" />
+      <module name="LBuddyBoy Development" target="1.5" />
+      <module name="lCore" target="1.8" />
+      <module name="lCore-Premium" target="1.8" />
+      <module name="lCoreAPI" target="8" />
+      <module name="lLib-API (1)" target="1.8" />
+      <module name="lLib-Bukkit (1)" target="1.8" />
+      <module name="lMOTD-Velocity (1)" target="11" />
+      <module name="lPearls" target="1.8" />
+      <module name="lQueue" target="1.8" />
+      <module name="lQueue (1)" target="1.5" />
+      <module name="lVouchers (1)" target="16" />
+      <module name="oStaff" target="1.8" />
+      <module name="potpvp-si" target="1.8" />
+      <module name="xPearls-NMS" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="BuddyLibs" options="-parameters" />
+      <module name="Flash" options="-parameters" />
+      <module name="Flash (1)" options="-parameters" />
+      <module name="Flash (1) (dev.lbuddyboy)" options="-parameters" />
+      <module name="Flash (2)" options="-parameters" />
+      <module name="Flash-API" options="-parameters" />
+      <module name="Flash-Bukkit" options="-parameters" />
+      <module name="Flash-Bukkit (1)" options="-parameters" />
+      <module name="Flash-Bungee" options="" />
+      <module name="lCore" options="-parameters" />
+      <module name="lCore-Premium" options="-parameters" />
+      <module name="lHub" options="" />
+      <module name="lQueue-API" options="-parameters" />
+      <module name="lQueue-Distributed" options="" />
+    </option>
+  </component>
+</project>

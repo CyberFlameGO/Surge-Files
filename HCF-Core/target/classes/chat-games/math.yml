@@ -1,0 +1,21 @@
+start-message:
+  - " "
+  - "&g&lMath Game"
+  - " "
+  - "&7┃ &fRespond with the correct answer"
+  - "&7┃ &fto receive a &gPartner Key&7&o."
+  - " "
+  - "&7┃ &fQuestion&7: &g%first-number% %equation-type% %second-number%"
+  - " "
+
+solved-message:
+  - ""
+  - "&g&lMath Game"
+  - ""
+  - "&7┃ &fWinner&7: &g%winner%"
+  - "&7┃ &fAnswer&7: &g%answer%"
+  - "&7┃ &fTime&7: &g%solve-time%s"
+  - ""
+
+win-commands:
+  - "goldencrates givekey %player% Partner 1"

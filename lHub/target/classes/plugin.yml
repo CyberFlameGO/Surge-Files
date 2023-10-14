@@ -1,0 +1,17 @@
+main: dev.lbuddyboy.hub.lHub
+name: lHub
+author: LBuddyBoy
+version: 0.1-BETA
+api-version: 1.19
+softdepend:
+  - Mizu
+  - Hestia
+  - EzQueue
+  - Portal
+  - Flash
+  - lCore
+  - lCore-Premium
+  - Vault
+  - AquaCore
+  - PlaceholderAPI
+  - lLibs

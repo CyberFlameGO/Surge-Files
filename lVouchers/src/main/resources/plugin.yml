@@ -1,0 +1,7 @@
+name: lVouchers
+main: dev.lbuddyboy.vouchers.lVouchers
+version: 1.0
+author: LBuddyBoy
+api-version: 1.19
+loadbefore:
+  - Samurai

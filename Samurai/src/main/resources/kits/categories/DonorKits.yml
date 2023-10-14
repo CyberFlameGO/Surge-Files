@@ -1,0 +1,28 @@
+name: "DonatorKits"
+display-name: "&aDonator Kits"
+display-item:
+  material: "EMERALD"
+  name: "&aDonator Kits &7(Click)"
+  lore: {}
+  item-flags:
+    - 'HIDE_ENCHANTS'
+  enchants:
+    - 'DURABILITY:10'
+  data: 0
+  amount: 1
+  slot: 5
+menu-settings:
+  size: 27
+  title: "Donator Kits"
+  auto-fill:
+    enabled: true
+    display-item:
+      material: STAINED_GLASS_PANE
+      name: ' '
+      lore: {}
+      item-flags:
+        - HIDE_ENCHANTS
+      enchants:
+        - 'DURABILITY:10'
+      data: 7
+      amount: 1

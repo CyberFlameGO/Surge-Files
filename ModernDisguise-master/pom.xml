@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dev.iiahmed</groupId>
+    <artifactId>ModernDisguise-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.8</version>
+
+    <distributionManagement>
+        <repository>
+            <id>gravemc-repo</id>
+            <url>https://repo.gravemc.net/releases</url>
+        </repository>
+    </distributionManagement>
+
+    <modules>
+        <module>ModernDisguise</module>
+        <module>DisguiseAPI</module>
+
+        <module>VS-Fallback</module>
+        <module>VS-1_8_R3</module>
+        <module>VS-1_19_R3</module>
+        <module>VS-1_20_R1</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.13.0</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>23.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>

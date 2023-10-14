@@ -1,0 +1,17 @@
+display-name: Kill 5 Zombies
+category: daily
+challenge-type: KILL_ENTITY
+value: ZOMBIE
+xp: 20
+neededProgress: 5
+display-item:
+  material: WOODEN_SWORD
+  name: §6§lKill 5 Zombies
+  lore:
+  - '§eXP Reward§7: §f%xp%'
+  - '§7- §eCurrent Progress§7: §f%progress%'
+  item-flags:
+  - HIDE_ENCHANTS
+  - HIDE_ATTRIBUTES
+  data: 0
+  amount: 5

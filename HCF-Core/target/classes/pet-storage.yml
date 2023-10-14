@@ -1,0 +1,5 @@
+anger-pet:
+  use-message: "&eYou have just used your &4Anger Pet&e and you have &cStrength II&e for &6%time%&e."
+
+venom-pet:
+  use-message: "&eYou have just used your &2Venom Pet&e and &6%player%&e now has &aPoison I &e& &bBlindness II&e for &6%time%&e."

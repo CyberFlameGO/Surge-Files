@@ -1,0 +1,44 @@
+title:
+  frames:
+    - '&5&lTRIBES'
+    - '&5&lTRIBES'
+    - '&d&lT&5&lRIBES'
+    - '&d&lTR&5&lIBES'
+    - '&d&lTRI&5&lBES'
+    - '&d&lTRIB&5&lES'
+    - '&d&lTRIB&5&lES'
+    - '&d&lTRIBE&5&lS'
+    - '&d&lTRIBES'
+    - '&d&lTRIBES'
+    - '&5&lTRIBES'
+    - '&5&lTRIBES'
+    - '&d&lTRIBES'
+    - '&d&lTRIBES'
+  delay: 5
+lines:
+  '10':
+    frames:
+      - '&f     %date%'
+    delay: -1
+  '65':
+    frames:
+      - '&7&m--------------------'
+  '70':
+    frames:
+      - '&4&lEOTW &7(%eotw-world%)'
+    delay: -1
+  '80':
+    frames:
+      - '&7» &fTime Left: &c%eotw-time-left%'
+    delay: -1
+  '85':
+    frames:
+      - '&7» &fCapturing: &e%eotw-capturing%'
+    delay: -1
+  '90':
+    frames:
+      - '&7» &fLocation: &e%eotw-location%'
+    delay: -1
+  '95':
+    frames:
+      - '&7&m--------------------'

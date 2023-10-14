@@ -1,0 +1,138 @@
+upgrade-list-format: "&d&l┃ &f%upgrade% %upgrade-level%"
+robot-menu:
+  size: 27
+  title: "Robot Menu"
+  buttons:
+    upgrades:
+      slot: 12
+      name: '&d&lRobot Upgrades'
+      lore:
+        - '%upgrades%'
+        - ''
+        - '&7Click to view the robot upgrades!'
+      material: "DIAMOND_PICKAXE"
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 0
+    pick-up:
+      slot: 14
+      name: '&4&lPick Up (&c&l!CAUTION)'
+      lore:
+        - '&7Click to pickup this robot!'
+      material: "BARRIER"
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 0
+    information:
+      slot: 16
+      name: '&e&lRobot Information'
+      lore:
+        - '&d&l┃ &fNext Produce&7: &e%next-produce%'
+        - '&d&l┃ &fTokens Produced&7: &e%produced%'
+        - ' '
+        - '&7Click to collect your tokens'
+      material: "BOOK"
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 0
+  auto-fill:
+    enabled: true
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 7
+      amount: 1
+upgrade-menu:
+  title: "Robot Upgrades"
+  size: 54
+  buttons:
+    upgrade-button:
+      name: '&d%upgrade-name%'
+      lore:
+        - '&7Your Level: &d%upgrade-level%/%upgrade-max%'
+        - '&7Next Cost: &6⛁%upgrade-cost%'
+        - ''
+        - '&7%description%'
+  auto-fill:
+    enabled: true
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 7
+      amount: 1
+  page:
+    previous-slot: 1
+    next-slot: 9
+    button-slots: "10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54"
+  back-button:
+    enabled: true
+    slot: 4
+list-menu:
+  title: "Your Robots"
+  size: 54
+  buttons:
+    collect-button:
+      material: "STORAGE_MINECART"
+      data: 0
+      name: '&6&lTotal Earnings'
+      lore:
+        - '&fTotal&7: &6%earnings%'
+        - ' '
+        - '&7Click to collect all earnings!'
+      slot: 5
+    robot-button:
+      name: '&d%robot-name%'
+      lore:
+        - '&7%upgrades%'
+        - ' '
+        - '&7Click to view this robot!'
+  auto-fill:
+    enabled: true
+    display-item:
+      material: "STAINED_GLASS_PANE"
+      name: ' '
+      lore:
+        - ''
+      item-flags:
+        - "HIDE_ENCHANTS"
+      enchants:
+        durability: 10
+      data: 7
+      amount: 1
+  page:
+    previous-slot: 1
+    next-slot: 9
+    button-slots: "10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54"
+upgrades:
+  efficiency:
+    cost-increment: 1000 # tokens
+    max-level: 10
+    display-name: "Efficiency"
+    display-material: "DIAMOND_PICKAXE"
+    description:
+      - '&7Increases the rate at which tokens are produced!'
+  fortune:
+    cost-increment: 1000 # tokens
+    max-level: 10
+    display-name: "Fortune"
+    display-material: "GOLD_INGOT"
+    description:
+      - '&7Increases the amount of tokens that are produced!'
